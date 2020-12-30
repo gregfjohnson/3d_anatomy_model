@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>BodyParts3D README</title>
+
+<style type="text/css">
+<!--
+body {
+ font-size:0.9em;
+}
+#pagesize {
+ width:800px;
+}
+-->
+</style>
+
+
+</head><body>
+<div id="pagesize">
+<h1><a name="Top"></a>BodyParts3D</h1>
+2013/06/19<br />
+<br />
+WebSite: <a href="http://lifesciencedb.jp/bp3d/">http://lifesciencedb.jp/bp3d/</a><br />
+FTP Site: <a href="ftp://ftp.biosciencedbc.jp/archive/bodyparts3d/">ftp://ftp.biosciencedbc.jp/archive/bodyparts3d/</a><br />
+<br />
+<p>
+BodyParts3D(http://lifesciencedb.jp/bp3d/)とは、解剖学用語が示す人体の部品
+ (臓器、器官) の位置と形状を３次元人体モデルで記述したデータベースです。
+このディレクトリには、BodyParts3Dデータベースに登録されている解剖学用語に
+対応する３次元人体モデルデータがあります。</p>
+<h3>README 目次</h3>
+<ol>
+ <li><a href="#Sec1">ダウンロードデータの構成</a></li>
+ <li><a href="#Sec2">ダウンロードデータの説明</a></li>
+ <li><a href="#Sec4">本データベースの利用許諾</a></li>
+ <li><a href="#Sec4">更新履歴</a></li>
+ <li><a href="#Sec5">参考文献</a></li>
+ <li><a href="#Sec6">連絡先</a></li>
+</ol>
+<h3><a name="Sec1"></a>1. ダウンロードデータの構成</h3>
+<ol>
+ <li><a href="#2.1">README</a></li>
+ <li><a href="#2.2">リリースノート (Release 4.0)</a></li>
+ <li><a href="#2.3">３次元臓器モデルのIDと臓器名称等との対応表 (IS-Aツリー)</a></li>
+ <li><a href="#2.4">３次元臓器モデルのIDと臓器名称等との対応表 (PART-OFツリー)</a></li>
+ <li><a href="#2.5">臓器、器官間の包含関係記述データ (IS-Aツリー)</a></li>
+ <li><a href="#2.6">臓器、器官間の包含関係記述データ (PART-OFツリー)</a></li>
+ <li><a href="#2.7">複合臓器定義データ (IS-Aツリー)</a></li>
+ <li><a href="#2.8">複合臓器定義データ (PART-OFツリー)</a></li>
+ <li><a href="#2.9">ポリゴンメッシュデータ (ポリゴン削減率=99%、IS-Aツリー)</a></li>
+ <li><a href="#2.10">ポリゴンメッシュデータ (ポリゴン削減率=99%、PART-OFツリー)</a></li>
+</ol>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+<h3><a name="Sec2"></a>2. ダウンロードデータの説明</h3>
+
+
+
+<h4><a name="2.1"></a>2.1 README</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>README</td>
+  </tr>
+  <tr>
+   <td>データ内容</td>
+   <td>BodyParts3Dのダウンロードデータについて説明したHTMLファイルです。</td>
+  </tr>
+  <tr>
+   <td>ダウンロードファイル名</td>
+   <td>README.html (日本語)</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.2"></a>2.2 リリースノート</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>リリースノート (Release 4.0)</td>
+  </tr>
+  <tr>
+   <td>データ内容</td>
+   <td>前回リリース (Release 3.0) からの主な変更点を記述したHTMLファイルです。</td>
+  </tr>
+  <tr>
+   <td>ダウンロードファイル名</td>
+   <td>release_4.0.html (日本語)</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.3"></a>2.3 ３次元臓器モデルのIDと臓器名称等との対応表 (IS-Aツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>３次元臓器モデルのIDと臓器名称等との対応表 (IS-Aツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>IS-Aツリーで利用できる３次元臓器モデルのリストです。 3次元臓器モデルの概念IDと表現ID、臓器名称等との対応について記述したタブ区切りテキストファイルです。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>isa_parts_list.txt (日本語) (296 KB)<br />
+   isa_parts_list_e.txt (English) (126 KB)</td>
+  </tr>
+ </tbody>
+</table>
+<br />
+isa_parts_list.txtの各列のデータは以下の通りです。各列はタブ区切りです。<br />
+isa_parts_list_e.txtでは「漢字」、「かな」の日本語情報が省略されています。<br />
+<br />
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th>項目名</th>
+   <th>項目の説明</th>
+  </tr>
+  <tr>
+   <td>concept id</td>
+   <td>対応するFMA(Foundational Model of Anatomy)のID。</td>
+  </tr>
+  <tr>
+   <td>representation id</td>
+   <td>概念の3次元表現に対するID。バージョン、treeが変わっても一意になっています。</td>
+  </tr>
+  <tr>
+   <td>en</td>
+   <td>英語名。主にFMAのpreferred nameを採用。</td>
+  </tr>
+  <tr>
+   <td>kanji</td>
+   <td>漢字</td>
+  </tr>
+  <tr>
+   <td>kana</td>
+   <td>かな</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.4"></a>2.4 ３次元臓器モデルのIDと臓器名称等との対応表 (PART-OFツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>３次元臓器モデルのIDと臓器名称等との対応表 (PART-OFツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>PART-OFツリーで利用できる３次元臓器モデルのリストです。 3次元臓器モデルの概念IDと表現ID、臓器名称等との対応について記述したタブ区切りテキストファイルです。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>partof_parts_list.txt (日本語) (140 KB)<br />
+   partof_parts_list_e.txt (English) (58 KB)</td>
+  </tr>
+ </tbody>
+</table>
+<br />
+partof_parts_list.txtの各列のデータは以下の通りです。各列はタブ区切りです。<br />
+partof_parts_list_e.txtでは「漢字」、「かな」の日本語情報が省略されています。<br />
+<br />
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th>項目名</th>
+   <th>項目の説明</th>
+  </tr>
+  <tr>
+   <td>concept id</td>
+   <td>対応するFMA (Foundational Model of Anatomy) のID。</td>
+  </tr>
+  <tr>
+   <td>representation id</td>
+   <td>概念の3次元表現に対するID。バージョン、treeが変わっても一意になっています。</td>
+  </tr>
+  <tr>
+   <td>en</td>
+   <td>英語名。主にFMAのpreferred nameを採用。</td>
+  </tr>
+  <tr>
+   <td>kanji</td>
+   <td>漢字</td>
+  </tr>
+  <tr>
+   <td>kana</td>
+   <td>かな</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.5"></a>2.5 臓器、器官間の包含関係記述データ (IS-Aツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>臓器、器官間の包含関係記述データ (IS-Aツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>ダウンロード可能な3次元臓器モデルの臓器、器官間の包含関係を記述したファイルです。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>isa_inclusion_relation_list.txt (203 KB)</td>
+  </tr>
+ </tbody>
+</table>
+<br />
+isa_inclusion_relation_list.txtの各列のデータは以下の通りです。各列はタブ区切りです。<br />
+<br />
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th>項目名</th>
+   <th>項目の説明</th>
+  </tr>
+  <tr>
+   <td>parent id</td>
+   <td>親にあたる臓器概念のID</td>
+  </tr>
+  <tr>
+   <td>parent name</td>
+   <td>親にあたる臓器概念の英語名</td>
+  </tr>
+  <tr>
+   <td>child id</td>
+   <td>親の一部にあたる臓器概念のID</td>
+  </tr>
+  <tr>
+   <td>child name</td>
+   <td>親の一部にあたる臓器概念の英語名</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.6"></a>2.6 臓器、器官間の包含関係記述データ (PART-OFツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>臓器、器官間の包含関係記述データ (PART-OFツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>ダウンロード可能な3次元臓器モデルの臓器、器官間の包含関係を記述したファイルです。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>partof_inclusion_relation_list.txt (90 KB)</td>
+  </tr>
+ </tbody>
+</table>
+<br />
+partof_inclusion_relation_list.txtの各列のデータは以下の通りです。各列はタブ区切りです。<br />
+<br />
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th>項目名</th>
+   <th>項目の説明</th>
+  </tr>
+  <tr>
+   <td>parent id</td>
+   <td>親にあたる臓器概念のID</td>
+  </tr>
+  <tr>
+   <td>parent name</td>
+   <td>親にあたる臓器概念の英語名</td>
+  </tr>
+  <tr>
+   <td>child id</td>
+   <td>親の一部にあたる臓器概念のID</td>
+  </tr>
+  <tr>
+   <td>child name</td>
+   <td>親の一部にあたる臓器概念の英語名</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.7"></a>2.7 複合臓器定義データ (IS-Aツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>複合臓器定義データ (IS-Aツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>BodyParts3Dでは最小単位 (ELEMENT) のポリゴンデータを作成し、これらの組み合わせによって複合的に定義される臓器 (COMPOUND) のデータは用意していません。このデータは、COMPOUNDがどのELEMENTの集合として構成されているかを記述しています。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>isa_element_parts.txt (1.1 MB)</td>
+  </tr>
+ </tbody>
+</table>
+<br />
+isa_element_parts.txtの各列のデータは以下の通りです。各列はタブ区切りです。<br />
+<br />
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th>項目名</th>
+   <th>項目の説明</th>
+  </tr>
+  <tr>
+   <td>concept id</td>
+   <td>COMPOUND概念のID</td>
+  </tr>
+  <tr>
+   <td>name</td>
+   <td>COMPOUND概念の英語名</td>
+  </tr>
+  <tr>
+   <td>element file id</td>
+   <td>ELEMENTのポリゴンデータファイルID</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4><a name="2.8"></a>2.8 複合臓器定義データ (PART-OFツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>複合臓器定義データ (PART-OFツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>BodyParts3Dでは最小単位 (ELEMENT) のポリゴンデータを作成し、これらの組み合わせによって複合的に定義される臓器 (COMPOUND) のデータは用意していません。このデータは、COMPOUNDがどのELEMENTの集合として構成されているかを記述しています。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>partof_element_parts.txt (654 KB)</td>
+  </tr>
+ </tbody>
+</table>
+<br />
+partof_element_parts.txtの各列のデータは以下の通りです。各列はタブ区切りです。<br />
+<br />
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th>項目名</th>
+   <th>項目の説明</th>
+  </tr>
+  <tr>
+   <td>concept id</td>
+   <td>COMPOUND概念のID</td>
+  </tr>
+  <tr>
+   <td>name</td>
+   <td>COMPOUND概念の英語名</td>
+  </tr>
+  <tr>
+   <td>element file id</td>
+   <td>ELEMENTのポリゴンデータファイルID</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4>2.9 <a name="2.9"></a>ポリゴンメッシュデータ(ポリゴン削減率=99%、IS-Aツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>ポリゴンメッシュデータ(ポリゴン削減率=99%、IS-Aツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>zip形式で圧縮されたダウンロードファイルには、各ELEMENTのFileID毎のポリゴンデータ(Wavefront OBJフォーマット)が複数格納されています。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>isa_BP3D_4.0_obj_99.zip (136 MB)</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+<h5>ポリゴンデータについて</h5>
+
+<p>
+&lt;参考&gt;
+</p>
+<ul>
+<li>
+<a href="http://www.hiramine.com/programming/3dmodelfileformat/objfileformat.html">obj フォーマット説明</a>(<a href="http://www.hiramine.com/index.html">hiramine.com</a>より)
+</li>
+<li>
+<a href="http://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%AA%E3%82%B4%E3%83%B3">ポリゴン</a> (出典：Wikipedia)</li>
+</ul>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+<h4>2.10 <a name="2.10"></a>ポリゴンメッシュデータ (ポリゴン削減率=99%、PART-OFツリー)</h4>
+<table border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <td>データ名</td>
+   <td>ポリゴンメッシュデータ (ポリゴン削減率=99%、PART-OFツリー)</td>
+  </tr>
+  <tr>
+   <td>データ内容の説明</td>
+   <td>zip形式で圧縮されたダウンロードファイルには、各ELEMENTのFileID毎のポリゴンデータ (Wavefront OBJフォーマット) が複数格納されています。</td>
+  </tr>
+  <tr>
+   <td>データファイル</td>
+   <td>partof_BP3D_4.0_obj_99.zip (62 MB)</td>
+  </tr>
+ </tbody>
+</table>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+<h5>ポリゴンデータについて</h5>
+
+<p>
+&lt;参考&gt;
+</p>
+<ul>
+<li>
+<a href="http://www.hiramine.com/programming/3dmodelfileformat/objfileformat.html">obj フォーマット説明</a>(<a href="http://www.hiramine.com/index.html">hiramine.com</a>より)
+</li>
+<li>
+<a href="http://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%AA%E3%82%B4%E3%83%B3">ポリゴン</a> (出典：Wikipedia)</li>
+</ul>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+
+
+
+
+<h3><a name="Sec3"></a>3. 本データベースの利用許諾</h3>
+<p>本データベースは、以下で定める利用許諾に基づきご利用いただくことができます。<br />
+本利用許諾は、本データベース利用における許諾内容、及び利用者が従うべき条件を定めています。</p>
+<h4>3.1 利用許諾</h4>
+<p>本データベースの利用許諾は、<span style="font-weight: bold;">
+クリエイティブ・コモンズ　表示-継承2.1　日本</span>　の定める利用許諾です。<br />
+本データベースのクレジットは、”<span style="font-weight: bold;">BodyParts3D, Copyright&copy; ライフサイエンス統合データベースセンター　licensed by CC表示－継承2.1 日本</span>”ですので、
+利用にあたり必ず表示してください。</p>
+<p>
+クリエイティブ・コモンズ　表示-継承2.1　日本の概要は
+<a href="http://creativecommons.org/licenses/by-sa/2.1/jp/" rel="external">こちら</a>です。
+具体的な許諾条項は
+<a href="http://creativecommons.org/licenses/by-sa/2.1/jp/legalcode" rel="external">こちら</a>をご覧ください。<br />
+</p>
+<p>本データベースにおいて、以下の条件に従う限り許諾されている事項：<br />
+</p>
+<ol>
+<li>本データベースの全部または一部に自由にアクセスし、データを取得することができます。</li>
+<li>本データベースの全部または一部のデータを自由に再配布することができます。</li>
+<li>本データベースの全部または一部のデータを利用した、データベースなどの二次的著作物を自由に作成し、配布することができます。</li>
+</ol>
+<p>本利用許諾に基づいて利用する際に従うべき条件：<br />
+</p>
+<ol>
+<li>
+本データベースの全部または一部、あるいは二次的著作物の配布に際しては、本データベースの作成者のクレジットを表示しなければなりません。</li>
+<li>
+本データベースの全部または一部のデータを利用して作成された二次的著作物は、この利用許諾の下で配布されなければなりません。</li>
+<li>
+本利用許諾で許諾されていない事項については、以下のデータベース作成者に連絡をとり、利用許諾を求める必要があります。</li>
+</ol>
+
+<p class="indent1">
+データベース作成者連絡先：<br />
+大学共同利用機関法人　情報・システム研究機構 ライフサイエンス統合データベースセンター<br />
+E-mail :bodyparts [at] dbcls [dot] rois [dot] ac [dot] jp<br />
+</p>
+
+<h4>3.2 本データベースへのリンクについて</h4>
+<p>
+本データベース内の全てのコンテンツに対しては、自由にリンクを貼ることができます。
+ただし、コンテンツの内容は予告なく変更される場合があります。</p>
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+<h3><a name="Sec4"></a>4. 更新履歴</h3>
+<table border="1" cellpadding="2" cellspacing="0">
+<tbody>
+<tr>
+<td>更新日</td>
+<td>更新内容</td>
+</tr>
+<tr>
+<td>2013/06/19</td>
+<td>データ更新 (Release 4.0)</td>
+</tr>
+<tr>
+<td>2013/04/11</td>
+<td>連絡先のメールアドレスを変更</td>
+</tr>
+<tr>
+<td>2013/01/17</td>
+<td>下記３つのデータに対し、簡易検索URLを追加。
+<ul>
+<li>３次元臓器モデルのIDと臓器名称等との対応表</li>
+<li>臓器、器官間の包含関係記述データ</li>
+<li>複合臓器定義データ</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2011/09/15</td>
+<td>データ更新 (Release 3.0)</td>
+</tr>
+<tr>
+<td>2011/08/25</td>
+<td>利用許諾を更新</td>
+</tr>
+<tr>
+<td>2010/08/16</td>
+<td>データ更新 (Release 2.0)</td>
+</tr>
+<tr>
+<td>2009/03/18</td>
+<td>データベースアーカイブにてダウンロードデータ公開開始</td>
+</tr>
+<tr>
+<td>2009/02/09</td>
+<td>3次元データのデータ更新 (Release 1.0)</td>
+</tr>
+<tr>
+<td>2008/08/12</td>
+<td>BodyPart3D (http://lifesciencedb.jp/ag/bp3d/) で公開開始</td>
+</tr>
+</tbody>
+</table>
+
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+<h3><a name="Sec5"></a>5. 参考文献</h3>
+Mitsuhashi N, Fujieda K, Tamura T, Kawamoto S, Takagi T, Okubo K.<br />
+BodyParts3D: 3D structure database for anatomical concepts.<br />
+Nucleic Acids Res. 2009 Jan;37(Database issue):D782-5. Epub 2008 Oct 3.<br />
+PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/18835852">18835852</a><br />
+<br />
+<h3><a name="Sec6"></a>6.連絡先</h3>
+BodyParts3Dについてのお問い合わせは、下記連絡先までご連絡ください。<br />
+<br />
+E-mail : 
+bodyparts [at] dbcls [dot] rois [dot] ac [dot] jp
+
+
+<div style="text-align: right;"><a href="#Top">トップに戻る</a></div>
+</div>
+
+</body>
+</html>

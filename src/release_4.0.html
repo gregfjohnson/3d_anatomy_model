@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<TITLE>BodyParts3D Release Note</TITLE>
+</HEAD>
+<BODY dir="ltr" class="static_page ltr lang_jp show_leftnav chrome1 chrome winvista win modules_widescreen new-ui ">
+<DIV class="wrapper" id="baseDiv">
+
+<TABLE class="layout" border="0"><TBODY><TR>
+<TD class="left_column"></TD>
+
+<TD class="content new-ui">
+
+<DIV class="inner_content">
+
+<DIV class="gsg">
+
+<DIV class="gsg-body">
+<DIV class="gsg-inner-body">
+<DIV class="gsg-inner-answer">
+
+
+<h2 class="gsg">BodyParts3Dリリースノート(Release 4.0, 2013/5/16)</h2>
+
+<h2>What is new in 4.0</h2>
+
+<h3>座標系の変更</h3>
+<ul>
+ <li>胴体内の大きな内部器官に合わせて骨格を調整を行いました。</li>
+ <li>そのため多くのパーツの位置が変わっています。</li>
+</ul>
+
+<h3>conventional treeの廃止</h3>
+<ul>
+ <li>V3.0まで提供していたconventional treeは、データの詳細化に伴い維持が困難になったため、conventional treeを廃止しました。</li>
+ <li>FMA (Foundational Model of Anatomy by University of Washington School of Medicine)のis_aおよびpart_of treeによるデータの組合せは引き続き提供しています。</li>
+</ul>
+
+<h3>概念の追加</h3>
+<ul>
+ <li>血管を含む肺と肝臓が分割されて追加されていますが、概念とのマッピングに若干の不整合を含む可能性があります。</li>
+ <li>脳の動脈が追加されました。</li>
+ <li>体循環に係る動脈および静脈が追加されました。</li>
+ <li>眼球内部および付随する構造が追加されました。</li>
+ <li>咽頭・喉頭が追加されました。</li>
+</ul>
+
+<h3>ファイル名</h3>
+<ul>
+ <li>バージョン3.0以前はポリゴンファイルはその概念ID番号で表されていました。</li>
+ <li>概念、ファイル名とその関係の混乱を避けるため、ファイル名はユニークなIDに変更になりました。（例：FJ1234）</li>
+ <li>ポリゴンファイルと対応概念は別途テーブルをご参照下さい。</li>
+</ul>
+
+<h2>ご利用に際しての注意点</h2>
+<p>
+データには対応する3次元モデルが未作成の概念、正常解剖モデルとして利用すべきでない間違いが含まれている場合があります。<br />
+</p>
+
+<h2>統計値</h2>
+
+<table>
+ <tr>
+  <th style="background:#f0f0f0">V2.0</th><th style="background:#f0f0f0">FMA concepts</th><th style="background:#f0f0f0">ELEMENTAL representation</th><th style="background:#f0f0f0">COMPOUND representation</th>
+ </tr>
+ <tr>
+  <td>is-a tree</td><td style="text-align:right">80457</td><td style="text-align:right">843</td><td style="text-align:right">643</td>
+ </tr>
+ <tr>
+  <td>part-of tree</td><td style="text-align:right">35597</td><td style="text-align:right">408</td><td style="text-align:right">326</td>
+ </tr>
+ <tr>
+  <td>in both tree</td><td style="text-align:right">30068</td><td style="text-align:right">406</td><td style="text-align:right">0</td>
+ </tr>
+ <tr>
+  <td>all unique FMA</td><td style="text-align:right">80457</td><td style="text-align:right">845</td><td style="text-align:right">969</td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <th style="background:#f0f0f0">V3.0</th><th style="background:#f0f0f0">FMA concepts</th><th style="background:#f0f0f0">ELEMENTAL representation</th><th style="background:#f0f0f0">COMPOUND representation</th>
+ </tr>
+ <tr>
+  <td>is-a tree</td><td style="text-align:right">80457</td><td style="text-align:right">912</td><td style="text-align:right">700</td>
+ </tr>
+ <tr>
+  <td>part-of tree</td><td style="text-align:right">35597</td><td style="text-align:right">436</td><td style="text-align:right">353</td>
+ </tr>
+ <tr>
+  <td>in both tree</td><td style="text-align:right">30068</td><td style="text-align:right">433</td><td style="text-align:right">0</td>
+ </tr>
+ <tr>
+  <td>all unique FMA</td><td style="text-align:right">80457</td><td style="text-align:right">915</td><td style="text-align:right">1053</td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <th style="background:#f0f0f0">V4.0</th><th style="background:#f0f0f0">FMA concepts</th><th style="background:#f0f0f0">ELEMENTAL representation</th><th style="background:#f0f0f0">COMPOUND representation</th>
+ </tr>
+ <tr>
+  <td>is-a tree</td><td style="text-align:right">80457</td><td style="text-align:right">1651</td><td style="text-align:right">1254</td>
+ </tr>
+ <tr>
+  <td>part-of tree</td><td style="text-align:right">35597</td><td style="text-align:right">765</td><td style="text-align:right">603</td>
+ </tr>
+ <tr>
+  <td>in both tree</td><td style="text-align:right">30068</td><td style="text-align:right">764</td><td style="text-align:right">3</td>
+ </tr>
+ <tr>
+  <td>all unique FMA</td><td style="text-align:right">80457</td><td style="text-align:right">1652</td><td style="text-align:right">1854</td>
+ </tr>
+</table>
+
+<h2> BodyParts3Dの座標系</h2>
+
+<img border="1" width="500" src="http://dbarchive.biosciencedbc.jp/archive/bodyparts3d/images/coordinate_system.png">
+
+<h2>公開履歴</h2>
+
+<ul>
+<li>Release 4.0:  2013/5/16</li>
+<li>Release 3.0:  2011/6/20</li>
+<li>Release 2.0:  2010/4/28</li>
+<li>Release 1.0:  2009/2/9</li>
+</ul>
+
+<h2>リファレンス</h2>
+1. Nieuwenhuys R, Voogd J, Huijzen, CV: The Human Central Nervous System 4th edition: Springer, 2008. <br /> 
+2. Mai JK, Paxinos G, Voss T: Atlas of the Human Brain, Third Edition: Academic Press, 2007.<br /> 
+3. Standring S: Gray's Anatomy: The Anatomical Basis of Clinical Practice, Expert Consult 40th edition: Churchill Livingstone, 2008.<br />
+4. Schunke M, Schulte E, Schumacher, Udo: プロメテウス解剖学アトラス : 頭部/神経解剖, 東京 : 医学書院, 2009.<br />
+5. SPL-PNL Brain Atlas 2008 March, <a href="http://www.spl.harvard.edu/publications/item/view/1265">http://www.spl.harvard.edu/publications/item/view/1265</a>.<br />
+6. Talairach Label Data, <a href="http://www.talairach.org/">http://www.talairach.org/</a>.<br />
+7. Rosse C, Mejino JLV: A reference ontology for biomedical informatics: the Foundational Model of Anatomy. Journal of Biomedical Informatics 2003, 36(6):478-500.<br />
+8. Foundational Model of Anatomy (subset), <a href="http://www.obofoundry.org/cgi-bin/detail.cgi?id=fma_lite">http://www.obofoundry.org/cgi-bin/detail.cgi?id=fma_lite</a><br>
+9. 最新解剖学用語集, <a href="http://web.sc.itc.keio.ac.jp/anatomy/TA/TA-contents.html">http://web.sc.itc.keio.ac.jp/anatomy/TA/TA-contents.html</a>, 2007年8月1日改訂版.<br />
+10. 解剖学用語委員会: 解剖学用語, 東京: 医学書院, 2007.<br />
+</div>
+</div>
+
+</td></tr>
+</tbody>
+</table>
+
+<br/>
+
+</div>
+</body>
+</html>
