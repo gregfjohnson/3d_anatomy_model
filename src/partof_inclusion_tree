@@ -1,0 +1,1368 @@
+fma FMA20394 (human body), 19 child nodes
+ fma FMA7152 (alimentary system), 3 child nodes
+  fma FMA49184 (mouth), 7 child nodes
+   fma FMA54640 (tongue), 0 child nodes
+   fma FMA55021 (soft palate), 5 child nodes
+    fma FMA46728 (right levator veli palatini), 0 child nodes
+    fma FMA46729 (left levator veli palatini), 0 child nodes
+    fma FMA46731 (right tensor veli palatini), 0 child nodes
+    fma FMA46732 (left tensor veli palatini), 0 child nodes
+    fma FMA55022 (uvula), 1 child nodes
+     fma FMA46733 (uvular muscle), 0 child nodes
+   fma FMA59398 (mandibular part of mouth), 3 child nodes
+    fma FMA54398 (lower jaw), 0 child nodes
+    fma FMA59802 (right submandibular gland), 0 child nodes
+    fma FMA59803 (left submandibular gland), 0 child nodes
+   fma FMA59399 (maxillary part of mouth), 1 child nodes
+    fma FMA54397 (upper jaw), 0 child nodes
+   fma FMA59763 (gingiva of upper jaw), 0 child nodes
+   fma FMA59764 (gingiva of lower jaw), 0 child nodes
+   fma FMA59992 (faucial part of mouth), 0 child nodes
+  fma FMA71132 (gastrointestinal tract), 17 child nodes
+   fma FMA7131 (esophagus), 0 child nodes
+   fma FMA7148 (stomach), 0 child nodes
+   fma FMA7197 (liver), 7 child nodes
+    fma FMA13362 (right lobe of liver), 4 child nodes
+     fma FMA14338 (right hepatic vein), 0 child nodes
+     fma FMA14778 (right hepatic artery), 4 child nodes
+      fma FMA70441 (anterior segmental hepatic artery), 2 child nodes
+       fma FMA70442 (anterior superior segmental hepatic artery), 0 child nodes
+       fma FMA70443 (anterior inferior segmental hepatic artery), 0 child nodes
+      fma FMA70444 (posterior segmental hepatic artery), 2 child nodes
+       fma FMA70445 (posterior superior segmental hepatic artery), 0 child nodes
+       fma FMA70446 (posterior inferior segmental hepatic artery), 0 child nodes
+      fma FMA70447 (caudate lobe branch of right hepatic artery), 0 child nodes
+      fma FMA70456 (trunk of right hepatic artery), 0 child nodes
+     fma FMA15800 (anterior inferior segmental tributary of middle hepatic vein), 0 child nodes
+     fma FMA71857 (right hepatic biliary tree), 3 child nodes
+      fma FMA14669 (right hepatic duct), 0 child nodes
+      fma FMA71861 (anterior tributary of right hepatic biliary tree), 2 child nodes
+       fma FMA71867 (anterior superior tributary of right hepatic biliary tree), 0 child nodes
+       fma FMA71868 (anterior inferior tributary of right hepatic biliary tree), 0 child nodes
+      fma FMA71862 (posterior tributary of right hepatic biliary tree), 2 child nodes
+       fma FMA71869 (posterior superior tributary of right hepatic biliary tree), 0 child nodes
+       fma FMA71870 (posterior inferior tributary of right hepatic biliary tree), 0 child nodes
+    fma FMA13363 (left lobe of liver), 5 child nodes
+     fma FMA13365 (caudate lobe of liver), 0 child nodes
+     fma FMA14339 (left hepatic vein), 0 child nodes
+     fma FMA14779 (left hepatic artery), 4 child nodes
+      fma FMA70448 (medial segmental hepatic artery), 2 child nodes
+       fma FMA70449 (medial superior segmental hepatic artery), 0 child nodes
+       fma FMA70450 (medial inferior segmental hepatic artery), 0 child nodes
+      fma FMA70451 (lateral segmental hepatic artery), 2 child nodes
+       fma FMA70452 (lateral superior segmental hepatic artery), 0 child nodes
+       fma FMA70453 (lateral inferior segmental hepatic artery), 0 child nodes
+      fma FMA70455 (caudate lobe branch of left hepatic artery), 0 child nodes
+      fma FMA70457 (trunk of left hepatic artery), 0 child nodes
+     fma FMA15415 (left portal vein), 4 child nodes
+      fma FMA15425 (caudate lobe branch of left portal vein), 0 child nodes
+      fma FMA15427 (medial branch of left portal vein), 2 child nodes
+       fma FMA15428 (medial superior segmental branch of left portal vein), 0 child nodes
+       fma FMA15429 (medial inferior segmental branch of left portal vein), 0 child nodes
+      fma FMA15430 (lateral branch of left portal vein), 2 child nodes
+       fma FMA15431 (lateral superior segmental branch of left portal vein), 0 child nodes
+       fma FMA15432 (lateral inferior segmental branch of left portal vein), 0 child nodes
+      fma FMA82697 (trunk of left portal vein), 0 child nodes
+     fma FMA71858 (left hepatic biliary tree), 4 child nodes
+      fma FMA14670 (left hepatic duct), 0 child nodes
+      fma FMA71863 (lateral tributary of left hepatic biliary tree), 2 child nodes
+       fma FMA71887 (lateral superior tributary of left hepatic biliary tree), 0 child nodes
+       fma FMA71888 (lateral inferior tributary of left hepatic biliary tree), 0 child nodes
+      fma FMA71864 (medial tributary of left hepatic biliary tree), 2 child nodes
+       fma FMA71885 (medial superior tributary of left hepatic biliary tree), 0 child nodes
+       fma FMA71886 (medial inferior tributary of left hepatic biliary tree), 0 child nodes
+      fma FMA71889 (caudate lobe tributary of left hepatic biliary tree), 0 child nodes
+    fma FMA14772 (hepatic artery proper), 0 child nodes
+    fma FMA15414 (right portal vein), 4 child nodes
+     fma FMA15419 (anterior branch of right portal vein), 2 child nodes
+      fma FMA15420 (anterior superior segmental branch of right portal vein), 0 child nodes
+      fma FMA15421 (anterior inferior segmental branch of right portal vein), 0 child nodes
+     fma FMA15422 (posterior branch of right portal vein), 2 child nodes
+      fma FMA15423 (posterior superior segmental branch of right portal vein), 0 child nodes
+      fma FMA15424 (posterior inferior segmental branch of right portal vein), 0 child nodes
+     fma FMA82695 (trunk of right portal vein), 0 child nodes
+     fma FMA82706 (caudate lobe branch of right portal vein), 0 child nodes
+    fma FMA15809 (right hemiliver), 2 child nodes
+     fma FMA15748 (anterior sector of right liver), 2 child nodes
+      fma FMA15743 (hepatovenous segment v), 0 child nodes
+      fma FMA15746 (hepatovenous segment viii), 0 child nodes
+     fma FMA15749 (posterior sector of right liver), 2 child nodes
+      fma FMA15744 (hepatovenous segment vi), 0 child nodes
+      fma FMA15745 (hepatovenous segment vii), 0 child nodes
+    fma FMA15810 (left hemiliver), 2 child nodes
+     fma FMA15750 (anterior sector of left liver), 2 child nodes
+      fma FMA15741 (hepatovenous segment iii), 0 child nodes
+      fma FMA15742 (hepatovenous segment iv), 0 child nodes
+     fma FMA15751 (posterior sector of left liver), 1 child nodes
+      fma FMA15739 (hepatovenous segment ii), 0 child nodes
+    fma FMA68016 (intrahepatic biliary tree), 0 child nodes
+   fma FMA7198 (pancreas), 2 child nodes
+    fma FMA63103 (pancreatic duct tree), 1 child nodes
+     fma FMA10419 (pancreatic duct), 0 child nodes
+    fma FMA63120 (parenchyma of pancreas), 0 child nodes
+   fma FMA7200 (small intestine), 4 child nodes
+    fma FMA7206 (duodenum), 0 child nodes
+    fma FMA7207 (jejunum), 3 child nodes
+     fma FMA16981 (proximal part of jejunum), 0 child nodes
+     fma FMA16982 (middle part of jejunum), 0 child nodes
+     fma FMA16983 (distal part of jejunum), 0 child nodes
+    fma FMA7208 (ileum), 3 child nodes
+     fma FMA14964 (proximal part of ileum), 0 child nodes
+     fma FMA14965 (middle part of ileum), 0 child nodes
+     fma FMA14966 (distal part of ileum), 1 child nodes
+      fma FMA17181 (wall of distal part of ileum), 1 child nodes
+       fma FMA11338 (ileocecal junction), 0 child nodes
+    fma FMA14615 (wall of small intestine), 1 child nodes
+     fma FMA14618 (wall of ileum), 0 child nodes
+   fma FMA7201 (large intestine), 1 child nodes
+    fma FMA14619 (wall of large intestine), 1 child nodes
+     fma FMA14971 (muscle layer of large intestine), 3 child nodes
+      fma FMA15042 (taenia mesocolica), 0 child nodes
+      fma FMA15043 (taenia omentalis), 0 child nodes
+      fma FMA15044 (taenia libera), 0 child nodes
+   fma FMA7202 (gallbladder), 0 child nodes
+   fma FMA9908 (peritoneal sac), 1 child nodes
+    fma FMA9584 (peritoneum), 1 child nodes
+     fma FMA14703 (visceral peritoneum), 3 child nodes
+      fma FMA14643 (mesentery of small intestine), 0 child nodes
+      fma FMA14647 (transverse mesocolon), 0 child nodes
+      fma FMA16549 (mesoappendix), 0 child nodes
+   fma FMA14541 (cecum), 0 child nodes
+   fma FMA14542 (appendix), 0 child nodes
+   fma FMA14544 (rectum), 0 child nodes
+   fma FMA14545 (ascending colon), 0 child nodes
+   fma FMA14546 (transverse colon), 0 child nodes
+   fma FMA14547 (descending colon), 0 child nodes
+   fma FMA14665 (biliary tree), 2 child nodes
+    fma FMA14539 (cystic duct), 0 child nodes
+    fma FMA71891 (hepatic biliary tree), 1 child nodes
+     fma FMA14668 (common hepatic duct), 0 child nodes
+   fma FMA49177 (upper gastrointestinal tract), 0 child nodes
+   fma FMA49179 (lower gastrointestinal tract), 0 child nodes
+  fma FMA265228 (pancreaticobiliary system), 0 child nodes
+ fma FMA7154 (head), 2 child nodes
+  fma FMA24728 (face), 5 child nodes
+   fma FMA46472 (nose), 4 child nodes
+    fma FMA54375 (nasal septum), 1 child nodes
+     fma FMA60118 (skeleton of nasal septum), 2 child nodes
+      fma FMA59837 (bony part of nasal septum), 0 child nodes
+      fma FMA59838 (cartilaginous part of nasal septum), 0 child nodes
+    fma FMA59515 (external nose), 3 child nodes
+     fma FMA59516 (root of nose), 0 child nodes
+     fma FMA59517 (dorsum of nose), 0 child nodes
+     fma FMA59836 (cartilaginous skeleton of external nose), 4 child nodes
+      fma FMA59505 (right major alar cartilage), 0 child nodes
+      fma FMA59506 (left major alar cartilage), 0 child nodes
+      fma FMA59512 (right lateral nasal cartilage), 0 child nodes
+      fma FMA59513 (left lateral nasal cartilage), 0 child nodes
+    fma FMA59637 (internal nose), 4 child nodes
+     fma FMA59503 (septal nasal cartilage), 0 child nodes
+     fma FMA59668 (wall of internal nose), 1 child nodes
+      fma FMA59671 (right lateral wall of internal nose), 0 child nodes
+     fma FMA59748 (right side of internal nose), 1 child nodes
+      fma FMA59754 (wall of right side of internal nose), 0 child nodes
+     fma FMA59749 (left side of internal nose), 1 child nodes
+      fma FMA59755 (wall of left side of internal nose), 2 child nodes
+       fma FMA59665 (septum of internal nose), 0 child nodes
+       fma FMA59672 (left lateral wall of internal nose), 0 child nodes
+    fma FMA60116 (nasal skeleton), 1 child nodes
+     fma FMA59538 (cartilaginous skeleton of nose), 0 child nodes
+   fma FMA53637 (right cheek), 0 child nodes
+   fma FMA53638 (left cheek), 0 child nodes
+   fma FMA54449 (right eye), 11 child nodes
+    fma FMA12514 (right eyeball), 6 child nodes
+     fma FMA58099 (wall of right eyeball), 2 child nodes
+      fma FMA58105 (fibrous layer of right eyeball), 2 child nodes
+       fma FMA58239 (right cornea), 0 child nodes
+       fma FMA58271 (right sclera), 0 child nodes
+      fma FMA58299 (right choroid), 0 child nodes
+     fma FMA58107 (vascular layer of right eyeball), 0 child nodes
+     fma FMA58236 (right iris), 0 child nodes
+     fma FMA58242 (right lens), 0 child nodes
+     fma FMA58828 (right vitreous body), 0 child nodes
+     fma FMA58839 (suspensory ligament of right lens), 0 child nodes
+    fma FMA49044 (right superior rectus), 0 child nodes
+    fma FMA49046 (right inferior rectus), 0 child nodes
+    fma FMA49050 (right inferior oblique), 0 child nodes
+    fma FMA49052 (right superior oblique), 0 child nodes
+    fma FMA49054 (right lateral rectus), 0 child nodes
+    fma FMA49056 (right medial rectus), 0 child nodes
+    fma FMA54440 (right upper eyelid), 2 child nodes
+     fma FMA49048 (right levator palpebrae superioris), 0 child nodes
+     fma FMA59091 (tarsal plate of right upper eyelid), 0 child nodes
+    fma FMA54443 (right lower eyelid), 1 child nodes
+     fma FMA59089 (tarsal plate of right lower eyelid), 0 child nodes
+    fma FMA59368 (right lacrimal apparatus), 2 child nodes
+     fma FMA59102 (right lacrimal gland), 0 child nodes
+     fma FMA61064 (right lacrimal duct), 4 child nodes
+      fma FMA59541 (right lacrimal lake), 0 child nodes
+      fma FMA59545 (right lacrimal sac), 0 child nodes
+      fma FMA59555 (right nasolacrimal duct), 0 child nodes
+      fma FMA59582 (right lacrimal canaliculus), 0 child nodes
+    fma FMA72952 (orbital part of right eye), 0 child nodes
+   fma FMA54450 (left eye), 11 child nodes
+    fma FMA12515 (left eyeball), 7 child nodes
+     fma FMA58082 (anterior chamber of left eyeball), 0 child nodes
+     fma FMA58100 (wall of left eyeball), 1 child nodes
+      fma FMA58106 (fibrous layer of left eyeball), 2 child nodes
+       fma FMA58240 (left cornea), 0 child nodes
+       fma FMA58272 (left sclera), 0 child nodes
+     fma FMA58108 (vascular layer of left eyeball), 1 child nodes
+      fma FMA58300 (left choroid), 0 child nodes
+     fma FMA58237 (left iris), 0 child nodes
+     fma FMA58243 (left lens), 0 child nodes
+     fma FMA58829 (left vitreous body), 0 child nodes
+     fma FMA58840 (suspensory ligament of left lens), 0 child nodes
+    fma FMA49045 (left superior rectus), 0 child nodes
+    fma FMA49047 (left inferior rectus), 0 child nodes
+    fma FMA49051 (left inferior oblique), 0 child nodes
+    fma FMA49053 (left superior oblique), 0 child nodes
+    fma FMA49055 (left lateral rectus), 0 child nodes
+    fma FMA49057 (left medial rectus), 0 child nodes
+    fma FMA54441 (left upper eyelid), 2 child nodes
+     fma FMA49049 (left levator palpebrae superioris), 0 child nodes
+     fma FMA59092 (tarsal plate of left upper eyelid), 0 child nodes
+    fma FMA54444 (left lower eyelid), 1 child nodes
+     fma FMA59090 (tarsal plate of left lower eyelid), 0 child nodes
+    fma FMA59369 (left lacrimal apparatus), 2 child nodes
+     fma FMA59103 (left lacrimal gland), 0 child nodes
+     fma FMA61065 (left lacrimal duct), 4 child nodes
+      fma FMA59542 (left lacrimal lake), 0 child nodes
+      fma FMA59546 (left lacrimal sac), 0 child nodes
+      fma FMA59556 (left nasolacrimal duct), 0 child nodes
+      fma FMA59583 (left lacrimal canaliculus), 0 child nodes
+    fma FMA72953 (orbital part of left eye), 0 child nodes
+  fma FMA54545 (head proper), 5 child nodes
+   fma FMA46448 (frontal part of head), 0 child nodes
+   fma FMA49187 (occipital part of head), 0 child nodes
+   fma FMA61732 (right parietal part of head), 1 child nodes
+    fma FMA52788 (right parietal bone), 0 child nodes
+   fma FMA61733 (left parietal part of head), 0 child nodes
+   fma FMA270201 (basicranial part of head proper), 3 child nodes
+    fma FMA52801 (basicranium), 0 child nodes
+    fma FMA67944 (cerebellum), 0 child nodes
+    fma FMA79876 (brainstem), 1 child nodes
+     fma FMA62004 (medulla oblongata), 0 child nodes
+ fma FMA7157 (nervous system), 1 child nodes
+  fma FMA55675 (neuraxis), 3 child nodes
+   fma FMA7647 (spinal cord), 1 child nodes
+    fma FMA78497 (central canal of spinal cord), 0 child nodes
+   fma FMA50801 (brain), 4 child nodes
+    fma FMA61992 (forebrain), 2 child nodes
+     fma FMA62000 (telencephalon), 2 child nodes
+      fma FMA61819 (left cerebral hemisphere), 9 child nodes
+       fma FMA72970 (left frontal lobe), 2 child nodes
+        fma FMA72662 (left precentral gyrus), 0 child nodes
+        fma FMA242209 (cortex of left frontal lobe), 1 child nodes
+         fma FMA242627 (left prefrontal cortex), 3 child nodes
+          fma FMA72654 (left superior frontal gyrus), 0 child nodes
+          fma FMA72656 (left middle frontal gyrus), 0 child nodes
+          fma FMA72658 (left inferior frontal gyrus), 0 child nodes
+       fma FMA72972 (left temporal lobe), 4 child nodes
+        fma FMA72686 (left middle temporal gyrus), 0 child nodes
+        fma FMA72688 (left inferior temporal gyrus), 0 child nodes
+        fma FMA72690 (left fusiform gyrus), 0 child nodes
+        fma FMA72706 (left parahippocampal gyrus), 0 child nodes
+       fma FMA72974 (left parietal lobe), 4 child nodes
+        fma FMA72666 (left postcentral gyrus), 0 child nodes
+        fma FMA72668 (left supramarginal gyrus), 0 child nodes
+        fma FMA72670 (left angular gyrus), 0 child nodes
+        fma FMA72672 (left superior parietal lobule), 0 child nodes
+       fma FMA72976 (left occipital lobe), 0 child nodes
+       fma FMA72978 (left insula), 0 child nodes
+       fma FMA72981 (left limbic lobe), 2 child nodes
+        fma FMA72718 (left cingulate gyrus), 0 child nodes
+        fma FMA242611 (left archicortex), 1 child nodes
+         fma FMA261141 (left hippocampal formation), 1 child nodes
+          fma FMA72714 (left hippocampus), 0 child nodes
+       fma FMA78450 (left lateral ventricle), 0 child nodes
+       fma FMA242182 (cortex of left cerebral hemisphere), 0 child nodes
+       fma FMA242186 (subcortex of left cerebral hemisphere), 1 child nodes
+        fma FMA260794 (white matter of left cerebral hemisphere), 1 child nodes
+         fma FMA72907 (left internal capsule), 0 child nodes
+      fma FMA67292 (right cerebral hemisphere), 9 child nodes
+       fma FMA72969 (right frontal lobe), 4 child nodes
+        fma FMA72653 (right superior frontal gyrus), 0 child nodes
+        fma FMA72655 (right middle frontal gyrus), 0 child nodes
+        fma FMA72657 (right inferior frontal gyrus), 0 child nodes
+        fma FMA72661 (right precentral gyrus), 0 child nodes
+       fma FMA72971 (right temporal lobe), 3 child nodes
+        fma FMA72685 (right middle temporal gyrus), 0 child nodes
+        fma FMA72687 (right inferior temporal gyrus), 0 child nodes
+        fma FMA72689 (right fusiform gyrus), 0 child nodes
+       fma FMA72973 (right parietal lobe), 4 child nodes
+        fma FMA72665 (right postcentral gyrus), 0 child nodes
+        fma FMA72667 (right supramarginal gyrus), 0 child nodes
+        fma FMA72669 (right angular gyrus), 0 child nodes
+        fma FMA72671 (right superior parietal lobule), 0 child nodes
+       fma FMA72975 (right occipital lobe), 0 child nodes
+       fma FMA72977 (right insula), 0 child nodes
+       fma FMA72980 (right limbic lobe), 3 child nodes
+        fma FMA72705 (right parahippocampal gyrus), 0 child nodes
+        fma FMA72717 (right cingulate gyrus), 0 child nodes
+        fma FMA242609 (right archicortex), 1 child nodes
+         fma FMA261139 (right hippocampal formation), 1 child nodes
+          fma FMA72713 (right hippocampus), 0 child nodes
+       fma FMA78449 (right lateral ventricle), 0 child nodes
+       fma FMA242180 (cortex of right cerebral hemisphere), 1 child nodes
+        fma FMA242207 (cortex of right frontal lobe), 1 child nodes
+         fma FMA242625 (right prefrontal cortex), 0 child nodes
+       fma FMA242184 (subcortex of right cerebral hemisphere), 1 child nodes
+        fma FMA260791 (white matter of right cerebral hemisphere), 1 child nodes
+         fma FMA72906 (right internal capsule), 0 child nodes
+     fma FMA62001 (diencephalon), 3 child nodes
+      fma FMA62008 (hypothalamus), 1 child nodes
+       fma FMA62028 (intermediate hypothalamic region), 1 child nodes
+        fma FMA62327 (tuber cinereum), 0 child nodes
+      fma FMA62009 (epithalamus), 2 child nodes
+       fma FMA62032 (habenula), 0 child nodes
+       fma FMA62033 (pineal body), 0 child nodes
+      fma FMA78454 (third ventricle), 0 child nodes
+    fma FMA61993 (midbrain), 2 child nodes
+     fma FMA78467 (cerebral aqueduct), 0 child nodes
+     fma FMA83902 (midbrain tectum), 4 child nodes
+      fma FMA73422 (right superior colliculus), 0 child nodes
+      fma FMA73423 (left superior colliculus), 0 child nodes
+      fma FMA73434 (right inferior colliculus), 0 child nodes
+      fma FMA73435 (left inferior colliculus), 0 child nodes
+    fma FMA67687 (hindbrain), 1 child nodes
+     fma FMA62003 (metencephalon), 1 child nodes
+      fma FMA67943 (pons), 0 child nodes
+    fma FMA242787 (ventricular system of brain), 1 child nodes
+     fma FMA78469 (fourth ventricle), 0 child nodes
+   fma FMA242675 (ventricular system of neuraxis), 1 child nodes
+    fma FMA75007 (cavity of neuraxis), 0 child nodes
+ fma FMA7158 (respiratory system), 1 child nodes
+  fma FMA265130 (respiratory tract), 1 child nodes
+   fma FMA45662 (lower respiratory tract), 2 child nodes
+    fma FMA7309 (right lung), 6 child nodes
+     fma FMA7333 (upper lobe of right lung), 5 child nodes
+      fma FMA7338 (right apical bronchopulmonary segment), 2 child nodes
+       fma FMA8617 (right apical segmental artery), 2 child nodes
+        fma FMA68662 (apical part of right apical segmental artery), 0 child nodes
+        fma FMA68665 (anterior part of right apical segmental artery), 0 child nodes
+       fma FMA68211 (right apical segmental bronchial tree), 0 child nodes
+      fma FMA7339 (right posterior bronchopulmonary segment), 1 child nodes
+       fma FMA8619 (right posterior segmental artery), 2 child nodes
+        fma FMA68670 (apical part of right posterior segmental artery), 0 child nodes
+        fma FMA68673 (posterior part of right posterior segmental artery), 0 child nodes
+      fma FMA7359 (right anterior bronchopulmonary segment), 2 child nodes
+       fma FMA8620 (right anterior segmental artery), 2 child nodes
+        fma FMA68677 (posterior branch of right anterior segmental artery), 0 child nodes
+        fma FMA68683 (anterior branch of right anterior segmental artery), 0 child nodes
+       fma FMA68212 (right anterior segmental bronchial tree), 0 child nodes
+      fma FMA8655 (right upper lobar vein), 3 child nodes
+       fma FMA8661 (right apical segmental vein), 3 child nodes
+        fma FMA8681 (apical part of right apical segmental vein), 0 child nodes
+        fma FMA68880 (trunk of right apical segmental vein), 0 child nodes
+        fma FMA68921 (anterior part of right apical segmental vein), 0 child nodes
+       fma FMA8662 (right anterior segmental vein), 2 child nodes
+        fma FMA68926 (superior part of right anterior segmental vein), 0 child nodes
+        fma FMA68928 (inferior part of right anterior segmental vein), 0 child nodes
+       fma FMA8663 (right posterior segmental vein), 0 child nodes
+      fma FMA31744 (upper lobe part of right bronchial tree), 1 child nodes
+       fma FMA68213 (right posterior segmental bronchial tree), 0 child nodes
+     fma FMA7337 (lower lobe of right lung), 5 child nodes
+      fma FMA7362 (right posterior basal bronchopulmonary segment), 1 child nodes
+       fma FMA8632 (right posterior basal segmental artery), 3 child nodes
+        fma FMA68735 (accessory subsuperior branch of right posterior basal segmental artery), 0 child nodes
+        fma FMA68738 (laterobasal branch of right posterior basal segmental artery), 0 child nodes
+        fma FMA68741 (mediobasal branch of right posterior basal segmental artery), 0 child nodes
+      fma FMA7363 (right lateral basal bronchopulmonary segment), 2 child nodes
+       fma FMA8631 (right lateral basal segmental artery), 1 child nodes
+        fma FMA68728 (lateral branch of right lateral basal segmental artery), 0 child nodes
+       fma FMA68220 (right lateral basal segmental bronchial tree), 0 child nodes
+      fma FMA7364 (right anterior basal bronchopulmonary segment), 2 child nodes
+       fma FMA8630 (right anterior basal segmental artery), 2 child nodes
+        fma FMA68723 (basal branch of right anterior basal segmental artery), 0 child nodes
+        fma FMA68725 (lateral branch of right anterior basal segmental artery), 0 child nodes
+       fma FMA68321 (right anterior basal segmental bronchial tree), 0 child nodes
+      fma FMA7365 (right medial basal bronchopulmonary segment), 1 child nodes
+       fma FMA68218 (right medial basal segmental bronchial tree), 0 child nodes
+      fma FMA7366 (right superior bronchopulmonary segment), 0 child nodes
+     fma FMA7383 (middle lobe of lung), 3 child nodes
+      fma FMA7360 (medial bronchopulmonary segment), 3 child nodes
+       fma FMA8665 (medial segmental vein), 2 child nodes
+        fma FMA68982 (superior part of medial segmental vein), 0 child nodes
+        fma FMA68983 (inferior part of medial segmental vein), 0 child nodes
+       fma FMA68193 (medial segmental artery), 2 child nodes
+        fma FMA68693 (superior branch of medial segmental artery), 0 child nodes
+        fma FMA68694 (inferior branch of medial segmental artery), 0 child nodes
+       fma FMA68214 (medial segmental bronchial tree), 0 child nodes
+      fma FMA7361 (lateral bronchopulmonary segment), 3 child nodes
+       fma FMA8664 (lateral segmental vein), 2 child nodes
+        fma FMA68944 (posterior part of lateral segmental vein), 0 child nodes
+        fma FMA68945 (anterior part of lateral segmental vein), 0 child nodes
+       fma FMA68194 (lateral segmental artery), 2 child nodes
+        fma FMA68690 (posterior branch of lateral segmental artery), 0 child nodes
+        fma FMA68691 (anterior branch of lateral segmental artery), 0 child nodes
+       fma FMA68215 (lateral segmental bronchial tree), 0 child nodes
+      fma FMA8656 (middle lobar vein), 0 child nodes
+     fma FMA67994 (intrapulmonary part of right pulmonary artery), 2 child nodes
+      fma FMA68197 (right upper lobar artery), 1 child nodes
+       fma FMA68659 (apicoposterior division of right upper lobar artery), 0 child nodes
+      fma FMA68658 (inferomedial branch of right pulmonary artery), 2 child nodes
+       fma FMA68196 (middle lobar artery), 0 child nodes
+       fma FMA68200 (right lower lobar artery), 2 child nodes
+        fma FMA8627 (right superior segmental artery), 3 child nodes
+         fma FMA68706 (medial branch of right superior segmental artery), 0 child nodes
+         fma FMA68709 (superior branch of right superior segmental artery), 0 child nodes
+         fma FMA68712 (lateral branch of right superior segmental artery), 0 child nodes
+        fma FMA68845 (right basal segmental artery), 0 child nodes
+     fma FMA68002 (intrapulmonary part of right superior pulmonary vein), 0 child nodes
+     fma FMA68003 (intrapulmonary part of right inferior pulmonary vein), 0 child nodes
+    fma FMA7393 (tracheobronchial tree), 3 child nodes
+     fma FMA7394 (trachea), 0 child nodes
+     fma FMA26661 (right bronchial tree), 1 child nodes
+      fma FMA68319 (inferomedial part of right bronchial tree), 2 child nodes
+       fma FMA31741 (middle lobe part of right bronchial tree), 0 child nodes
+       fma FMA31747 (lower lobe part of right bronchial tree), 2 child nodes
+        fma FMA68216 (right superior segmental bronchial tree), 0 child nodes
+        fma FMA68221 (right posterior basal segmental bronchial tree), 0 child nodes
+     fma FMA26662 (left bronchial tree), 2 child nodes
+      fma FMA7396 (left main bronchus), 0 child nodes
+      fma FMA31748 (lower lobe part of left bronchial tree), 2 child nodes
+       fma FMA68230 (left medial basal segmental bronchial tree), 0 child nodes
+       fma FMA68231 (left anterior basal segmental bronchial tree), 0 child nodes
+ fma FMA7159 (urinary system), 3 child nodes
+  fma FMA45659 (lower urinary tract), 2 child nodes
+   fma FMA15900 (urinary bladder), 0 child nodes
+   fma FMA19667 (urethra), 0 child nodes
+  fma FMA71102 (right upper urinary tract), 2 child nodes
+   fma FMA7204 (right kidney), 0 child nodes
+   fma FMA15571 (right ureter), 0 child nodes
+  fma FMA71103 (left upper urinary tract), 2 child nodes
+   fma FMA7205 (left kidney), 0 child nodes
+   fma FMA15572 (left ureter), 0 child nodes
+ fma FMA7160 (genital system), 1 child nodes
+  fma FMA9600 (prostate), 0 child nodes
+ fma FMA7161 (cardiovascular system), 7 child nodes
+  fma FMA45621 (pulmonary vascular system), 0 child nodes
+  fma FMA45623 (systemic arterial system), 0 child nodes
+  fma FMA45626 (systemic venous system), 1 child nodes
+   fma FMA7165 (right side of heart), 5 child nodes
+    fma FMA4716 (right marginal vein), 0 child nodes
+    fma FMA7096 (right atrium), 3 child nodes
+     fma FMA7234 (tricuspid valve), 3 child nodes
+      fma FMA7238 (anterior leaflet of tricuspid valve), 0 child nodes
+      fma FMA7239 (posterior leaflet of tricuspid valve), 0 child nodes
+      fma FMA7240 (septal leaflet of tricuspid valve), 0 child nodes
+     fma FMA9550 (outflow part of right atrium), 0 child nodes
+     fma FMA11359 (cavity of right atrium), 0 child nodes
+    fma FMA7098 (right ventricle), 2 child nodes
+     fma FMA7216 (outflow part of right ventricle), 1 child nodes
+      fma FMA7246 (pulmonary valve), 3 child nodes
+       fma FMA7247 (left anterior cusp of pulmonary valve), 0 child nodes
+       fma FMA7249 (right anterior cusp of pulmonary valve), 0 child nodes
+       fma FMA7250 (posterior cusp of pulmonary valve), 0 child nodes
+     fma FMA9552 (inflow part of right ventricle), 0 child nodes
+    fma FMA9291 (cavity of right ventricle), 0 child nodes
+    fma FMA73703 (wall of right side of heart), 3 child nodes
+     fma FMA9457 (wall of right atrium), 0 child nodes
+     fma FMA9533 (wall of right ventricle), 2 child nodes
+      fma FMA49207 (wall of inflow part of right ventricle), 1 child nodes
+       fma FMA7259 (papillary muscle of right ventricle), 1 child nodes
+        fma FMA7262 (septal papillary muscle of right ventricle), 0 child nodes
+      fma FMA84842 (free wall of right ventricle), 3 child nodes
+       fma FMA9553 (anterior wall of right ventricle), 1 child nodes
+        fma FMA7260 (anterior papillary muscle of right ventricle), 0 child nodes
+       fma FMA9555 (inferior wall of right ventricle), 1 child nodes
+        fma FMA7261 (posterior papillary muscle of right ventricle), 0 child nodes
+       fma FMA84931 (myocardium of free wall of right ventricle), 1 child nodes
+        fma FMA84856 (subendocardial layer of myocardium of right ventricle), 0 child nodes
+     fma FMA9535 (myocardium of right ventricle), 1 child nodes
+      fma FMA83447 (myocardium of right ventricle proper), 0 child nodes
+  fma FMA45628 (portal venous system), 0 child nodes
+  fma FMA45842 (pulmonary arterial tree), 2 child nodes
+   fma FMA50872 (right pulmonary artery), 0 child nodes
+   fma FMA50873 (left pulmonary artery), 1 child nodes
+    fma FMA68201 (left lower lobar artery), 2 child nodes
+     fma FMA8642 (left superior segmental artery), 0 child nodes
+     fma FMA68846 (left basal segmental artery), 3 child nodes
+      fma FMA8646 (left lateral basal segmental artery), 0 child nodes
+      fma FMA8647 (left posterior basal segmental artery), 0 child nodes
+      fma FMA68843 (antero-medial basal segmental artery), 2 child nodes
+       fma FMA8644 (left medial basal segmental artery), 0 child nodes
+       fma FMA8645 (left anterior basal segmental artery), 0 child nodes
+  fma FMA45847 (portal venous tree), 2 child nodes
+   fma FMA50735 (hepatic portal vein), 0 child nodes
+   fma FMA71904 (pre-hepatic portal vein), 0 child nodes
+  fma FMA49894 (systemic arterial tree), 23 child nodes
+   fma FMA3734 (aorta), 3 child nodes
+    fma FMA3736 (ascending aorta), 0 child nodes
+    fma FMA3768 (arch of aorta), 0 child nodes
+    fma FMA3784 (descending aorta), 2 child nodes
+     fma FMA3789 (abdominal aorta), 0 child nodes
+     fma FMA87217 (descending thoracic aorta), 0 child nodes
+   fma FMA3932 (brachiocephalic artery), 2 child nodes
+    fma FMA3941 (right common carotid artery), 1 child nodes
+     fma FMA3949 (right internal carotid artery), 4 child nodes
+      fma FMA49869 (right ophthalmic artery), 0 child nodes
+      fma FMA50029 (right anterior cerebral artery), 0 child nodes
+      fma FMA50082 (right middle cerebral artery), 2 child nodes
+       fma FMA50377 (anterolateral central branch of right middle cerebral artery), 0 child nodes
+       fma FMA61991 (trunk of right middle cerebral artery), 1 child nodes
+        fma FMA50366 (sphenoid part of right middle cerebral artery), 0 child nodes
+      fma FMA50088 (right anterior choroidal artery), 0 child nodes
+    fma FMA3953 (right subclavian artery), 11 child nodes
+     fma FMA3958 (right vertebral artery), 3 child nodes
+      fma FMA50519 (right posterior inferior cerebellar artery), 0 child nodes
+      fma FMA50532 (right anterior spinal artery), 0 child nodes
+      fma FMA50542 (basilar artery), 7 child nodes
+       fma FMA50544 (anterior inferior cerebellar artery), 0 child nodes
+       fma FMA50561 (right pontine artery), 2 child nodes
+        fma FMA50566 (medial branch of right pontine artery), 0 child nodes
+        fma FMA50568 (lateral branch of right pontine artery), 0 child nodes
+       fma FMA50562 (left pontine artery), 2 child nodes
+        fma FMA50567 (medial branch of left pontine artery), 0 child nodes
+        fma FMA50569 (lateral branch of left pontine artery), 0 child nodes
+       fma FMA50574 (right superior cerebellar artery), 0 child nodes
+       fma FMA50575 (left superior cerebellar artery), 0 child nodes
+       fma FMA50584 (right posterior cerebral artery), 5 child nodes
+        fma FMA50643 (right lateral occipital artery), 2 child nodes
+         fma FMA50678 (anterior temporal branch of right lateral occipital artery), 0 child nodes
+         fma FMA50680 (middle temporal branch of right lateral occipital artery), 0 child nodes
+        fma FMA50645 (right medial occipital artery), 1 child nodes
+         fma FMA50684 (right splenial artery), 0 child nodes
+        fma FMA50658 (right posterior choroidal artery), 1 child nodes
+         fma FMA50672 (right posterior medial choroidal artery), 0 child nodes
+        fma FMA50664 (right thalamoperforating artery), 0 child nodes
+        fma FMA50670 (right thalamogeniculate artery), 0 child nodes
+       fma FMA50585 (left posterior cerebral artery), 5 child nodes
+        fma FMA50644 (left lateral occipital artery), 2 child nodes
+         fma FMA50679 (anterior temporal branch of left lateral occipital artery), 0 child nodes
+         fma FMA50681 (middle temporal branch of left lateral occipital artery), 0 child nodes
+        fma FMA50646 (left medial occipital artery), 1 child nodes
+         fma FMA50685 (left splenial artery), 0 child nodes
+        fma FMA50659 (left posterior choroidal artery), 1 child nodes
+         fma FMA50673 (left posterior medial choroidal artery), 0 child nodes
+        fma FMA50665 (left thalamoperforating artery), 0 child nodes
+        fma FMA50671 (left thalamogeniculate artery), 0 child nodes
+     fma FMA3969 (right internal thoracic artery), 2 child nodes
+      fma FMA3988 (right superior epigastric artery), 0 child nodes
+      fma FMA10692 (right musculophrenic artery), 0 child nodes
+     fma FMA22672 (right thoraco-acromial artery), 4 child nodes
+      fma FMA23063 (pectoral branch of right thoraco-acromial artery), 0 child nodes
+      fma FMA23068 (acromial branch of right thoraco-acromial artery), 0 child nodes
+      fma FMA23072 (deltoid branch of right thoraco-acromial artery), 0 child nodes
+      fma FMA66563 (trunk of right thoraco-acromial artery), 0 child nodes
+     fma FMA22675 (right lateral thoracic artery), 0 child nodes
+     fma FMA22678 (right subscapular artery), 2 child nodes
+      fma FMA23180 (right circumflex scapular artery), 0 child nodes
+      fma FMA66321 (right thoracodorsal artery), 0 child nodes
+     fma FMA22682 (right anterior circumflex humeral artery), 0 child nodes
+     fma FMA22685 (right posterior circumflex humeral artery), 0 child nodes
+     fma FMA22733 (right radial artery), 2 child nodes
+      fma FMA22764 (right radial recurrent artery), 0 child nodes
+      fma FMA22772 (dorsal carpal branch of right radial artery), 0 child nodes
+     fma FMA22797 (right ulnar artery), 4 child nodes
+      fma FMA22801 (right anterior ulnar recurrent artery), 0 child nodes
+      fma FMA22804 (right posterior ulnar recurrent artery), 0 child nodes
+      fma FMA22807 (right common interosseous artery), 1 child nodes
+       fma FMA22812 (right anterior interosseous artery), 0 child nodes
+      fma FMA22821 (right dorsal carpal branch of ulnar artery), 0 child nodes
+     fma FMA70347 (right thyrocervical artery), 4 child nodes
+      fma FMA3992 (right thyrocervical trunk), 0 child nodes
+      fma FMA10697 (right inferior thyroid artery), 0 child nodes
+      fma FMA10698 (right suprascapular artery), 0 child nodes
+      fma FMA10699 (right transverse cervical artery), 2 child nodes
+       fma FMA4057 (right dorsal scapular artery), 0 child nodes
+       fma FMA10700 (right superficial cervical artery), 0 child nodes
+     fma FMA70351 (right costocervical artery), 3 child nodes
+      fma FMA5039 (right costocervical trunk), 0 child nodes
+      fma FMA5042 (right superior intercostal artery), 0 child nodes
+      fma FMA10660 (right deep cervical artery), 0 child nodes
+   fma FMA4058 (left common carotid artery), 1 child nodes
+    fma FMA4062 (left internal carotid artery), 4 child nodes
+     fma FMA49870 (left ophthalmic artery), 0 child nodes
+     fma FMA50030 (left anterior cerebral artery), 0 child nodes
+     fma FMA50089 (left anterior choroidal artery), 0 child nodes
+     fma FMA50454 (cerebral arterial circle), 5 child nodes
+      fma FMA50085 (right posterior communicating artery), 0 child nodes
+      fma FMA50086 (left posterior communicating artery), 0 child nodes
+      fma FMA50169 (anterior communicating artery), 0 child nodes
+      fma FMA50639 (precommunicating part of right posterior cerebral artery), 0 child nodes
+      fma FMA50640 (precommunicating part of left posterior cerebral artery), 0 child nodes
+   fma FMA4149 (esophageal artery), 0 child nodes
+   fma FMA4634 (right subcostal artery), 0 child nodes
+   fma FMA4654 (left subcostal artery), 0 child nodes
+   fma FMA4694 (left subclavian artery), 14 child nodes
+    fma FMA4066 (left vertebral artery), 1 child nodes
+     fma FMA50520 (left posterior inferior cerebellar artery), 0 child nodes
+    fma FMA4068 (left internal thoracic artery), 2 child nodes
+     fma FMA4077 (left musculophrenic artery), 0 child nodes
+     fma FMA4083 (left superior epigastric artery), 0 child nodes
+    fma FMA22673 (left thoraco-acromial artery), 4 child nodes
+     fma FMA23064 (pectoral branch of left thoraco-acromial artery), 0 child nodes
+     fma FMA23069 (acromial branch of left thoraco-acromial artery), 0 child nodes
+     fma FMA23073 (deltoid branch of left thoraco-acromial artery), 0 child nodes
+     fma FMA66564 (trunk of left thoraco-acromial artery), 0 child nodes
+    fma FMA22676 (left lateral thoracic artery), 0 child nodes
+    fma FMA22679 (left subscapular artery), 2 child nodes
+     fma FMA23181 (left circumflex scapular artery), 0 child nodes
+     fma FMA66322 (left thoracodorsal artery), 0 child nodes
+    fma FMA22683 (left anterior circumflex humeral artery), 0 child nodes
+    fma FMA22687 (left posterior circumflex humeral artery), 0 child nodes
+    fma FMA22697 (left deep brachial artery), 0 child nodes
+    fma FMA22708 (left superior ulnar collateral artery), 0 child nodes
+    fma FMA22713 (left inferior ulnar collateral artery), 0 child nodes
+    fma FMA22734 (left radial artery), 2 child nodes
+     fma FMA22766 (left radial recurrent artery), 0 child nodes
+     fma FMA22773 (dorsal carpal branch of left radial artery), 0 child nodes
+    fma FMA22798 (left ulnar artery), 4 child nodes
+     fma FMA22802 (left anterior ulnar recurrent artery), 0 child nodes
+     fma FMA22805 (left posterior ulnar recurrent artery), 0 child nodes
+     fma FMA22808 (left common interosseous artery), 1 child nodes
+      fma FMA22813 (left anterior interosseous artery), 0 child nodes
+     fma FMA22822 (left dorsal carpal branch of ulnar artery), 0 child nodes
+    fma FMA70348 (left thyrocervical artery), 4 child nodes
+     fma FMA4084 (left thyrocervical trunk), 0 child nodes
+     fma FMA10680 (left inferior thyroid artery), 0 child nodes
+     fma FMA10681 (left suprascapular artery), 0 child nodes
+     fma FMA10682 (left transverse cervical artery), 2 child nodes
+      fma FMA10552 (left dorsal scapular artery), 0 child nodes
+      fma FMA10683 (left superficial cervical artery), 0 child nodes
+    fma FMA70352 (left costocervical artery), 3 child nodes
+     fma FMA4086 (left costocervical trunk), 0 child nodes
+     fma FMA4088 (left superior intercostal artery), 0 child nodes
+     fma FMA4134 (left deep cervical artery), 0 child nodes
+   fma FMA14746 (right inferior phrenic artery), 0 child nodes
+   fma FMA14747 (left inferior phrenic artery), 0 child nodes
+   fma FMA14749 (superior mesenteric artery), 6 child nodes
+    fma FMA14805 (inferior pancreaticoduodenal artery), 0 child nodes
+    fma FMA14809 (ileal artery), 0 child nodes
+    fma FMA14810 (middle colic artery), 0 child nodes
+    fma FMA14811 (right colic artery), 0 child nodes
+    fma FMA14815 (ileocolic artery), 1 child nodes
+     fma FMA14823 (inferior branch of ileocolic artery), 6 child nodes
+      fma FMA14816 (anterior cecal artery), 0 child nodes
+      fma FMA14817 (posterior cecal artery), 0 child nodes
+      fma FMA14818 (appendicular artery), 0 child nodes
+      fma FMA14819 (ileal branch of inferior branch of ileocolic artery), 0 child nodes
+      fma FMA14820 (ascending branch of inferior branch of ileocolic artery), 0 child nodes
+      fma FMA14824 (marginal colic artery), 0 child nodes
+    fma FMA66358 (trunk of superior mesenteric artery), 0 child nodes
+   fma FMA14750 (inferior mesenteric artery), 4 child nodes
+    fma FMA14826 (left colic artery), 0 child nodes
+    fma FMA14830 (sigmoid artery), 0 child nodes
+    fma FMA14831 (marginal artery of colon), 0 child nodes
+    fma FMA14832 (superior rectal artery), 0 child nodes
+   fma FMA14752 (right renal artery), 3 child nodes
+    fma FMA66363 (trunk of right renal artery), 0 child nodes
+    fma FMA69265 (right inferior suprarenal artery), 0 child nodes
+    fma FMA70492 (ureteric segment of right renal artery), 0 child nodes
+   fma FMA14753 (left renal artery), 3 child nodes
+    fma FMA66364 (trunk of left renal artery), 0 child nodes
+    fma FMA69266 (left inferior suprarenal artery), 0 child nodes
+    fma FMA70493 (ureteric segment of left renal artery), 0 child nodes
+   fma FMA14755 (right middle suprarenal artery), 0 child nodes
+   fma FMA14756 (left middle suprarenal artery), 0 child nodes
+   fma FMA14759 (right testicular artery), 0 child nodes
+   fma FMA14760 (left testicular artery), 0 child nodes
+   fma FMA14764 (common iliac artery), 1 child nodes
+    fma FMA18805 (external iliac artery), 1 child nodes
+     fma FMA43895 (posterior tibial artery), 1 child nodes
+      fma FMA43956 (plantar metatarsal artery), 1 child nodes
+       fma FMA69517 (distal perforating artery), 0 child nodes
+   fma FMA14765 (right common iliac artery), 2 child nodes
+    fma FMA18806 (right external iliac artery), 5 child nodes
+     fma FMA20688 (right inferior epigastric artery), 0 child nodes
+     fma FMA43896 (right anterior tibial artery), 1 child nodes
+      fma FMA43916 (right dorsalis pedis artery), 2 child nodes
+       fma FMA69490 (right lateral tarsal artery), 0 child nodes
+       fma FMA69494 (right arcuate artery), 0 child nodes
+     fma FMA43898 (right posterior tibial artery), 2 child nodes
+      fma FMA43929 (right medial plantar artery), 1 child nodes
+       fma FMA43937 (right superficial medial plantar artery), 0 child nodes
+      fma FMA43931 (right lateral plantar artery), 1 child nodes
+       fma FMA69566 (trunk of right lateral plantar artery), 1 child nodes
+        fma FMA43943 (right plantar arch), 0 child nodes
+     fma FMA70249 (right femoral artery), 2 child nodes
+      fma FMA20735 (right superficial epigastric artery), 0 child nodes
+      fma FMA20796 (right deep femoral artery), 2 child nodes
+       fma FMA20801 (right lateral circumflex femoral artery), 0 child nodes
+       fma FMA22507 (right descending genicular artery), 0 child nodes
+     fma FMA77380 (right popliteal artery), 0 child nodes
+    fma FMA18809 (right internal iliac artery), 0 child nodes
+   fma FMA14766 (left common iliac artery), 2 child nodes
+    fma FMA18807 (left external iliac artery), 5 child nodes
+     fma FMA20689 (left inferior epigastric artery), 0 child nodes
+     fma FMA43897 (left anterior tibial artery), 1 child nodes
+      fma FMA43917 (left dorsalis pedis artery), 2 child nodes
+       fma FMA69491 (left lateral tarsal artery), 0 child nodes
+       fma FMA69495 (left arcuate artery), 0 child nodes
+     fma FMA43899 (left posterior tibial artery), 2 child nodes
+      fma FMA43930 (left medial plantar artery), 1 child nodes
+       fma FMA43938 (left superficial medial plantar artery), 0 child nodes
+      fma FMA43932 (left lateral plantar artery), 1 child nodes
+       fma FMA69567 (trunk of left lateral plantar artery), 1 child nodes
+        fma FMA43944 (left plantar arch), 0 child nodes
+     fma FMA70250 (left femoral artery), 2 child nodes
+      fma FMA20736 (left superficial epigastric artery), 0 child nodes
+      fma FMA20797 (left deep femoral artery), 2 child nodes
+       fma FMA20802 (left lateral circumflex femoral artery), 0 child nodes
+       fma FMA22508 (left descending genicular artery), 0 child nodes
+     fma FMA77381 (left popliteal artery), 0 child nodes
+    fma FMA18810 (left internal iliac artery), 0 child nodes
+   fma FMA50039 (right coronary artery), 6 child nodes
+    fma FMA3802 (trunk of right coronary artery), 0 child nodes
+    fma FMA3807 (right conus artery), 0 child nodes
+    fma FMA3815 (first anterior ventricular branch of right coronary artery), 0 child nodes
+    fma FMA3818 (marginal branch of right coronary artery), 0 child nodes
+    fma FMA3837 (first posterior ventricular branch of right coronary artery), 0 child nodes
+    fma FMA3840 (posterior interventricular branch of right coronary artery), 0 child nodes
+   fma FMA50040 (left coronary artery), 3 child nodes
+    fma FMA3855 (trunk of left coronary artery), 0 child nodes
+    fma FMA3862 (anterior interventricular branch of left coronary artery), 6 child nodes
+     fma FMA3860 (diagonal branch of anterior descending branch of left coronary artery), 0 child nodes
+     fma FMA3868 (conus branch of anterior interventricular branch of left coronary artery), 0 child nodes
+     fma FMA3872 (first right anterior branch of anterior interventricular branch of left coronary artery), 0 child nodes
+     fma FMA3874 (second right anterior branch of anterior interventricular branch of left coronary artery), 0 child nodes
+     fma FMA3876 (third right anterior branch of anterior interventricular branch of left coronary artery), 0 child nodes
+     fma FMA74912 (trunk of anterior interventricular branch of left coronary artery), 0 child nodes
+    fma FMA3895 (circumflex branch of left coronary artery), 0 child nodes
+   fma FMA50737 (celiac artery), 4 child nodes
+    fma FMA14768 (left gastric artery), 0 child nodes
+    fma FMA14771 (common hepatic artery), 2 child nodes
+     fma FMA14775 (gastroduodenal artery), 1 child nodes
+      fma FMA76574 (trunk of gastroduodenal artery), 0 child nodes
+     fma FMA14776 (right gastric artery), 0 child nodes
+    fma FMA14773 (splenic artery), 0 child nodes
+    fma FMA14812 (celiac trunk), 0 child nodes
+ fma FMA7184 (lower limb), 1 child nodes
+  fma FMA16581 (pelvic girdle), 1 child nodes
+   fma FMA72062 (pelvic skeleton), 2 child nodes
+    fma FMA16586 (right hip bone), 0 child nodes
+    fma FMA16587 (left hip bone), 0 child nodes
+ fma FMA7185 (right upper limb), 3 child nodes
+  fma FMA23218 (right pectoral girdle), 4 child nodes
+   fma FMA24163 (skeleton of right pectoral girdle), 2 child nodes
+    fma FMA13322 (right clavicle), 0 child nodes
+    fma FMA13395 (right scapula), 0 child nodes
+   fma FMA33642 (right shoulder), 0 child nodes
+   fma FMA33644 (pectoral part of right pectoral girdle), 0 child nodes
+   fma FMA33646 (scapular part of right pectoral girdle), 3 child nodes
+    fma FMA13381 (right rhomboid major), 0 child nodes
+    fma FMA13383 (right rhomboid minor), 0 child nodes
+    fma FMA32540 (right levator scapulae), 0 child nodes
+  fma FMA24880 (right free upper limb), 4 child nodes
+   fma FMA9713 (right hand), 6 child nodes
+    fma FMA60325 (right thumb), 2 child nodes
+     fma FMA24450 (proximal phalanx of right thumb), 0 child nodes
+     fma FMA24459 (distal phalanx of right thumb), 0 child nodes
+    fma FMA60327 (right little finger), 3 child nodes
+     fma FMA24454 (proximal phalanx of right little finger), 0 child nodes
+     fma FMA24458 (middle phalanx of right little finger), 0 child nodes
+     fma FMA24463 (distal phalanx of right little finger), 0 child nodes
+    fma FMA60329 (right ring finger), 3 child nodes
+     fma FMA24453 (proximal phalanx of right ring finger), 0 child nodes
+     fma FMA24457 (middle phalanx of right ring finger), 0 child nodes
+     fma FMA24462 (distal phalanx of right ring finger), 0 child nodes
+    fma FMA60331 (right middle finger), 3 child nodes
+     fma FMA24452 (proximal phalanx of right middle finger), 0 child nodes
+     fma FMA24456 (middle phalanx of right middle finger), 0 child nodes
+     fma FMA24461 (distal phalanx of right middle finger), 0 child nodes
+    fma FMA60333 (right index finger), 3 child nodes
+     fma FMA24451 (proximal phalanx of right index finger), 0 child nodes
+     fma FMA24455 (middle phalanx of right index finger), 0 child nodes
+     fma FMA24460 (distal phalanx of right index finger), 0 child nodes
+    fma FMA61068 (right hand proper), 6 child nodes
+     fma FMA24464 (right first metacarpal bone), 0 child nodes
+     fma FMA24466 (right second metacarpal bone), 0 child nodes
+     fma FMA24468 (right third metacarpal bone), 0 child nodes
+     fma FMA24470 (right fourth metacarpal bone), 0 child nodes
+     fma FMA24472 (right fifth metacarpal bone), 0 child nodes
+     fma FMA79181 (skeleton of right hand proper), 0 child nodes
+   fma FMA11345 (right forearm), 2 child nodes
+    fma FMA23464 (right radius), 0 child nodes
+    fma FMA23467 (right ulna), 0 child nodes
+   fma FMA24895 (right arm), 9 child nodes
+    fma FMA13325 (right cephalic vein), 0 child nodes
+    fma FMA22691 (right brachial artery), 0 child nodes
+    fma FMA22696 (right deep brachial artery), 0 child nodes
+    fma FMA22707 (right superior ulnar collateral artery), 0 child nodes
+    fma FMA22712 (right inferior ulnar collateral artery), 0 child nodes
+    fma FMA22909 (right basilic vein), 0 child nodes
+    fma FMA22935 (right medial brachial vein), 0 child nodes
+    fma FMA23130 (right humerus), 0 child nodes
+    fma FMA37705 (right anconeus), 0 child nodes
+   fma FMA24940 (right wrist), 8 child nodes
+    fma FMA23725 (right trapezoid), 0 child nodes
+    fma FMA24435 (right scaphoid), 0 child nodes
+    fma FMA24437 (right lunate), 0 child nodes
+    fma FMA24439 (right triquetral), 0 child nodes
+    fma FMA24441 (right pisiform), 0 child nodes
+    fma FMA24443 (right trapezium), 0 child nodes
+    fma FMA24446 (right capitate), 0 child nodes
+    fma FMA24448 (right hamate), 0 child nodes
+  fma FMA58401 (investing fascia of right upper limb), 1 child nodes
+   fma FMA58405 (investing fascia of right free upper limb), 1 child nodes
+    fma FMA58575 (investing fascia of right forearm), 1 child nodes
+     fma FMA58448 (investing fascia of right wrist), 1 child nodes
+      fma FMA40120 (flexor retinaculum of right wrist), 0 child nodes
+ fma FMA7186 (left upper limb), 2 child nodes
+  fma FMA23219 (left pectoral girdle), 2 child nodes
+   fma FMA33645 (pectoral part of left pectoral girdle), 0 child nodes
+   fma FMA33647 (scapular part of left pectoral girdle), 3 child nodes
+    fma FMA13382 (left rhomboid major), 0 child nodes
+    fma FMA13384 (left rhomboid minor), 0 child nodes
+    fma FMA32541 (left levator scapulae), 0 child nodes
+  fma FMA24881 (left free upper limb), 5 child nodes
+   fma FMA9714 (left hand), 6 child nodes
+    fma FMA60326 (left thumb), 2 child nodes
+     fma FMA23951 (distal phalanx of left thumb), 0 child nodes
+     fma FMA65470 (proximal phalanx of left thumb), 0 child nodes
+    fma FMA60328 (left little finger), 4 child nodes
+     fma FMA23944 (middle phalanx of left little finger), 0 child nodes
+     fma FMA23959 (distal phalanx of left little finger), 0 child nodes
+     fma FMA66791 (proximal phalanx of left little finger), 0 child nodes
+     fma FMA71916 (proximal phalanx of left ring finger), 0 child nodes
+    fma FMA60330 (left ring finger), 2 child nodes
+     fma FMA23942 (middle phalanx of left ring finger), 0 child nodes
+     fma FMA23957 (distal phalanx of left ring finger), 0 child nodes
+    fma FMA60332 (left middle finger), 3 child nodes
+     fma FMA23940 (middle phalanx of left middle finger), 0 child nodes
+     fma FMA23955 (distal phalanx of left middle finger), 0 child nodes
+     fma FMA71908 (proximal phalanx of left middle finger), 0 child nodes
+    fma FMA60334 (left index finger), 3 child nodes
+     fma FMA23938 (middle phalanx of left index finger), 0 child nodes
+     fma FMA23953 (distal phalanx of left index finger), 0 child nodes
+     fma FMA71915 (proximal phalanx of left index finger), 0 child nodes
+    fma FMA61069 (left hand proper), 1 child nodes
+     fma FMA79182 (skeleton of left hand proper), 5 child nodes
+      fma FMA24465 (left first metacarpal bone), 0 child nodes
+      fma FMA24467 (left second metacarpal bone), 0 child nodes
+      fma FMA24469 (left third metacarpal bone), 0 child nodes
+      fma FMA24471 (left fourth metacarpal bone), 0 child nodes
+      fma FMA24473 (left fifth metacarpal bone), 0 child nodes
+   fma FMA11346 (left forearm), 3 child nodes
+    fma FMA23465 (left radius), 0 child nodes
+    fma FMA23468 (left ulna), 0 child nodes
+    fma FMA58576 (investing fascia of left forearm), 0 child nodes
+   fma FMA24896 (left arm), 7 child nodes
+    fma FMA13326 (left cephalic vein), 0 child nodes
+    fma FMA22692 (left brachial artery), 0 child nodes
+    fma FMA22910 (left basilic vein), 0 child nodes
+    fma FMA23131 (left humerus), 0 child nodes
+    fma FMA37666 (left coracobrachialis), 0 child nodes
+    fma FMA37669 (left brachialis), 0 child nodes
+    fma FMA37706 (left anconeus), 0 child nodes
+   fma FMA24941 (left wrist), 9 child nodes
+    fma FMA24436 (left scaphoid), 0 child nodes
+    fma FMA24438 (left lunate), 0 child nodes
+    fma FMA24440 (left triquetral), 0 child nodes
+    fma FMA24442 (left pisiform), 0 child nodes
+    fma FMA24444 (left trapezium), 0 child nodes
+    fma FMA24445 (left trapezoid), 0 child nodes
+    fma FMA24447 (left capitate), 0 child nodes
+    fma FMA24449 (left hamate), 0 child nodes
+    fma FMA58449 (investing fascia of left wrist), 1 child nodes
+     fma FMA40121 (flexor retinaculum of left wrist), 0 child nodes
+   fma FMA58406 (investing fascia of left free upper limb), 0 child nodes
+ fma FMA7187 (right lower limb), 3 child nodes
+  fma FMA16582 (right pelvic girdle), 1 child nodes
+   fma FMA24965 (right hip), 0 child nodes
+  fma FMA24882 (right free lower limb), 4 child nodes
+   fma FMA11343 (right foot), 13 child nodes
+    fma FMA24482 (right talus), 0 child nodes
+    fma FMA24497 (right calcaneus), 0 child nodes
+    fma FMA24500 (navicular bone of right foot), 0 child nodes
+    fma FMA24521 (right medial cuneiform bone), 0 child nodes
+    fma FMA24523 (right intermediate cuneiform bone), 0 child nodes
+    fma FMA24525 (right lateral cuneiform bone), 0 child nodes
+    fma FMA24528 (right cuboid bone), 0 child nodes
+    fma FMA60335 (right big toe), 2 child nodes
+     fma FMA32650 (distal phalanx of right big toe), 0 child nodes
+     fma FMA43253 (proximal phalanx of right big toe), 0 child nodes
+    fma FMA60337 (right second toe), 3 child nodes
+     fma FMA32634 (proximal phalanx of right second toe), 0 child nodes
+     fma FMA32642 (middle phalanx of right second toe), 0 child nodes
+     fma FMA32652 (distal phalanx of right second toe), 0 child nodes
+    fma FMA60339 (right third toe), 3 child nodes
+     fma FMA32636 (proximal phalanx of right third toe), 0 child nodes
+     fma FMA32644 (middle phalanx of right third toe), 0 child nodes
+     fma FMA32654 (distal phalanx of right third toe), 0 child nodes
+    fma FMA60341 (right fourth toe), 3 child nodes
+     fma FMA32638 (proximal phalanx of right fourth toe), 0 child nodes
+     fma FMA32646 (middle phalanx of right fourth toe), 0 child nodes
+     fma FMA32656 (distal phalanx of right fourth toe), 0 child nodes
+    fma FMA60343 (right little toe), 3 child nodes
+     fma FMA32640 (proximal phalanx of right little toe), 0 child nodes
+     fma FMA32658 (distal phalanx of right little toe), 0 child nodes
+     fma FMA230986 (middle phalanx of right little toe), 0 child nodes
+    fma FMA73086 (right foot proper), 5 child nodes
+     fma FMA24507 (right first metatarsal bone), 0 child nodes
+     fma FMA24509 (right second metatarsal bone), 0 child nodes
+     fma FMA24511 (right third metatarsal bone), 0 child nodes
+     fma FMA24513 (right fourth metatarsal bone), 0 child nodes
+     fma FMA24515 (right fifth metatarsal bone), 0 child nodes
+   fma FMA24968 (right thigh), 1 child nodes
+    fma FMA24474 (right femur), 0 child nodes
+   fma FMA24977 (right knee), 1 child nodes
+    fma FMA73055 (anterior part of right knee), 1 child nodes
+     fma FMA79065 (patellar part of right knee), 1 child nodes
+      fma FMA24486 (right patella), 0 child nodes
+   fma FMA24980 (right leg), 2 child nodes
+    fma FMA24477 (right tibia), 0 child nodes
+    fma FMA24480 (right fibula), 0 child nodes
+  fma FMA58418 (investing fascia of right lower limb), 1 child nodes
+   fma FMA58429 (investing fascia of right free lower limb), 1 child nodes
+    fma FMA58742 (investing fascia of right thigh), 1 child nodes
+     fma FMA51044 (fascia lata of right thigh), 1 child nodes
+      fma FMA58776 (right iliotibial tract), 0 child nodes
+ fma FMA7188 (left lower limb), 2 child nodes
+  fma FMA16583 (left pelvic girdle), 1 child nodes
+   fma FMA24966 (left hip), 0 child nodes
+  fma FMA24883 (left free lower limb), 4 child nodes
+   fma FMA11344 (left foot), 13 child nodes
+    fma FMA24483 (left talus), 0 child nodes
+    fma FMA24498 (left calcaneus), 0 child nodes
+    fma FMA24501 (navicular bone of left foot), 0 child nodes
+    fma FMA24522 (left medial cuneiform bone), 0 child nodes
+    fma FMA24524 (left intermediate cuneiform bone), 0 child nodes
+    fma FMA24526 (left lateral cuneiform bone), 0 child nodes
+    fma FMA24529 (left cuboid bone), 0 child nodes
+    fma FMA60336 (left big toe), 2 child nodes
+     fma FMA32651 (distal phalanx of left big toe), 0 child nodes
+     fma FMA43254 (proximal phalanx of left big toe), 0 child nodes
+    fma FMA60338 (left second toe), 3 child nodes
+     fma FMA32635 (proximal phalanx of left second toe), 0 child nodes
+     fma FMA32643 (middle phalanx of left second toe), 0 child nodes
+     fma FMA32653 (distal phalanx of left second toe), 0 child nodes
+    fma FMA60340 (left third toe), 3 child nodes
+     fma FMA32637 (proximal phalanx of left third toe), 0 child nodes
+     fma FMA32645 (middle phalanx of left third toe), 0 child nodes
+     fma FMA32655 (distal phalanx of left third toe), 0 child nodes
+    fma FMA60342 (left fourth toe), 3 child nodes
+     fma FMA32639 (proximal phalanx of left fourth toe), 0 child nodes
+     fma FMA32647 (middle phalanx of left fourth toe), 0 child nodes
+     fma FMA32657 (distal phalanx of left fourth toe), 0 child nodes
+    fma FMA60344 (left little toe), 3 child nodes
+     fma FMA32641 (proximal phalanx of left little toe), 0 child nodes
+     fma FMA32659 (distal phalanx of left little toe), 0 child nodes
+     fma FMA230988 (middle phalanx of left little toe), 0 child nodes
+    fma FMA73087 (left foot proper), 5 child nodes
+     fma FMA24508 (left first metatarsal bone), 0 child nodes
+     fma FMA24510 (left second metatarsal bone), 0 child nodes
+     fma FMA24512 (left third metatarsal bone), 0 child nodes
+     fma FMA24514 (left fourth metatarsal bone), 0 child nodes
+     fma FMA24516 (left fifth metatarsal bone), 0 child nodes
+   fma FMA24969 (left thigh), 1 child nodes
+    fma FMA24475 (left femur), 0 child nodes
+   fma FMA24978 (left knee), 1 child nodes
+    fma FMA73056 (anterior part of left knee), 1 child nodes
+     fma FMA79066 (patellar part of left knee), 1 child nodes
+      fma FMA24487 (left patella), 0 child nodes
+   fma FMA24981 (left leg), 2 child nodes
+    fma FMA24478 (left tibia), 0 child nodes
+    fma FMA24481 (left fibula), 0 child nodes
+ fma FMA7482 (musculoskeletal system), 1 child nodes
+  fma FMA23881 (skeletal system), 1 child nodes
+   fma FMA23876 (skeleton (in vivo)), 2 child nodes
+    fma FMA7483 (axial skeletal system), 1 child nodes
+     fma FMA71221 (axial skeleton), 1 child nodes
+      fma FMA13478 (vertebral column), 8 child nodes
+       fma FMA9140 (thoracic vertebral column), 11 child nodes
+        fma FMA26089 (first thoracic intervertebral symphysis), 1 child nodes
+         fma FMA10458 (intervertebral disk of first thoracic vertebra), 0 child nodes
+        fma FMA26094 (second thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13495 (intervertebral disk of second thoracic vertebra), 0 child nodes
+        fma FMA26095 (third thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13500 (intervertebral disk of third thoracic vertebra), 0 child nodes
+        fma FMA26096 (fourth thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13501 (intervertebral disk of fourth thoracic vertebra), 0 child nodes
+        fma FMA26097 (fifth thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13502 (intervertebral disk of fifth thoracic vertebra), 0 child nodes
+        fma FMA26098 (sixth thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13503 (intervertebral disk of sixth thoracic vertebra), 0 child nodes
+        fma FMA26099 (seventh thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13504 (intervertebral disk of seventh thoracic vertebra), 0 child nodes
+        fma FMA26100 (eighth thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13505 (intervertebral disk of eighth thoracic vertebra), 0 child nodes
+        fma FMA26101 (ninth thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13506 (intervertebral disk of ninth thoracic vertebra), 0 child nodes
+        fma FMA26102 (tenth thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13507 (intervertebral disk of tenth thoracic vertebra), 0 child nodes
+        fma FMA26103 (eleventh thoracic intervertebral symphysis), 1 child nodes
+         fma FMA13508 (intervertebral disk of eleventh thoracic vertebra), 0 child nodes
+       fma FMA16202 (sacrum), 0 child nodes
+       fma FMA16203 (lumbar vertebral column), 5 child nodes
+        fma FMA26105 (first lumbar intervertebral symphysis), 1 child nodes
+         fma FMA16033 (intervertebral disk of first lumbar vertebra), 0 child nodes
+        fma FMA26106 (second lumbar intervertebral symphysis), 1 child nodes
+         fma FMA16034 (intervertebral disk of second lumbar vertebra), 0 child nodes
+        fma FMA26107 (third lumbar intervertebral symphysis), 1 child nodes
+         fma FMA16035 (intervertebral disk of third lumbar vertebra), 0 child nodes
+        fma FMA26108 (fourth lumbar intervertebral symphysis), 1 child nodes
+         fma FMA16036 (intervertebral disk of fourth lumbar vertebra), 0 child nodes
+        fma FMA26109 (fifth lumbar intervertebral symphysis), 1 child nodes
+         fma FMA16037 (intervertebral disk of fifth lumbar vertebra), 0 child nodes
+       fma FMA24138 (cervical vertebral column), 6 child nodes
+        fma FMA25571 (intervertebral symphysis of axis), 1 child nodes
+         fma FMA25058 (intervertebral disk of axis), 0 child nodes
+        fma FMA26078 (third cervical intervertebral symphysis), 1 child nodes
+         fma FMA13896 (intervertebral disk of third cervical vertebra), 0 child nodes
+        fma FMA26083 (fourth cervical intervertebral symphysis), 1 child nodes
+         fma FMA13897 (intervertebral disk of fourth cervical vertebra), 0 child nodes
+        fma FMA26084 (fifth cervical intervertebral symphysis), 1 child nodes
+         fma FMA13898 (intervertebral disk of fifth cervical vertebra), 0 child nodes
+        fma FMA26085 (sixth cervical intervertebral symphysis), 1 child nodes
+         fma FMA13899 (intervertebral disk of sixth cervical vertebra), 0 child nodes
+        fma FMA26086 (seventh cervical intervertebral symphysis), 1 child nodes
+         fma FMA13900 (intervertebral disk of seventh cervical vertebra), 0 child nodes
+       fma FMA25511 (intervertebral symphysis), 1 child nodes
+        fma FMA10446 (intervertebral disk), 0 child nodes
+       fma FMA72063 (set of cervical vertebrae), 0 child nodes
+       fma FMA72064 (set of thoracic vertebrae), 0 child nodes
+       fma FMA72065 (set of lumbar vertebrae), 5 child nodes
+        fma FMA13072 (first lumbar vertebra), 0 child nodes
+        fma FMA13073 (second lumbar vertebra), 0 child nodes
+        fma FMA13074 (third lumbar vertebra), 0 child nodes
+        fma FMA13075 (fourth lumbar vertebra), 0 child nodes
+        fma FMA13076 (fifth lumbar vertebra), 0 child nodes
+    fma FMA46565 (skull), 2 child nodes
+     fma FMA53672 (neurocranium), 3 child nodes
+      fma FMA52734 (frontal bone), 0 child nodes
+      fma FMA52735 (occipital bone), 0 child nodes
+      fma FMA52789 (left parietal bone), 0 child nodes
+     fma FMA53673 (viscerocranium), 23 child nodes
+      fma FMA9710 (vomer), 0 child nodes
+      fma FMA52736 (sphenoid bone), 0 child nodes
+      fma FMA52738 (right temporal bone), 0 child nodes
+      fma FMA52739 (left temporal bone), 0 child nodes
+      fma FMA52740 (ethmoid), 0 child nodes
+      fma FMA52748 (mandible), 0 child nodes
+      fma FMA52749 (hyoid bone), 0 child nodes
+      fma FMA52892 (right zygomatic bone), 0 child nodes
+      fma FMA52893 (left zygomatic bone), 0 child nodes
+      fma FMA53082 (right orbit), 1 child nodes
+       fma FMA54667 (right orbital compartment), 1 child nodes
+        fma FMA260124 (right orbital content), 0 child nodes
+      fma FMA53083 (left orbit), 1 child nodes
+       fma FMA54668 (left orbital compartment), 1 child nodes
+        fma FMA260127 (left orbital content), 0 child nodes
+      fma FMA53645 (right lacrimal bone), 0 child nodes
+      fma FMA53646 (left lacrimal bone), 0 child nodes
+      fma FMA53647 (right nasal bone), 0 child nodes
+      fma FMA53648 (left nasal bone), 0 child nodes
+      fma FMA53649 (right maxilla), 0 child nodes
+      fma FMA53650 (left maxilla), 0 child nodes
+      fma FMA53655 (right palatine bone), 0 child nodes
+      fma FMA53656 (left palatine bone), 0 child nodes
+      fma FMA54737 (right inferior nasal concha), 0 child nodes
+      fma FMA54738 (left inferior nasal concha), 0 child nodes
+      fma FMA59654 (osseous skeleton of nose), 2 child nodes
+       fma FMA59655 (osseous skeleton of external nose), 0 child nodes
+       fma FMA59656 (osseous skeleton of internal nose), 0 child nodes
+      fma FMA61670 (skeleton of mouth), 0 child nodes
+ fma FMA9668 (endocrine system), 3 child nodes
+  fma FMA13889 (pituitary gland), 0 child nodes
+  fma FMA15629 (right adrenal gland), 0 child nodes
+  fma FMA15630 (left adrenal gland), 0 child nodes
+ fma FMA72979 (integumentary system), 0 child nodes
+ fma FMA74657 (integument), 1 child nodes
+  fma FMA7163 (skin), 0 child nodes
+ fma FMA79063 (deep fascial system), 1 child nodes
+  fma FMA58419 (investing fascia of left lower limb), 1 child nodes
+   fma FMA58430 (investing fascia of left free lower limb), 1 child nodes
+    fma FMA58743 (investing fascia of left thigh), 1 child nodes
+     fma FMA51045 (fascia lata of left thigh), 1 child nodes
+      fma FMA58777 (left iliotibial tract), 0 child nodes
+ fma FMA228642 (vasculature of body), 8 child nodes
+  fma FMA4717 (anterior cardiac venous tree), 0 child nodes
+  fma FMA49911 (right inferior pulmonary vein), 2 child nodes
+   fma FMA8670 (right superior segmental vein), 0 child nodes
+   fma FMA8671 (right common basal vein), 2 child nodes
+    fma FMA8672 (right superior basal vein), 2 child nodes
+     fma FMA8673 (right anterior basal segmental vein), 0 child nodes
+     fma FMA9425 (right lateral basal segmental vein), 0 child nodes
+    fma FMA8674 (right inferior basal vein), 2 child nodes
+     fma FMA9422 (right medial basal segmental vein), 0 child nodes
+     fma FMA9428 (right posterior basal segmental vein), 0 child nodes
+  fma FMA49913 (left inferior pulmonary vein), 1 child nodes
+   fma FMA8676 (left common basal vein), 2 child nodes
+    fma FMA8677 (left superior basal vein), 1 child nodes
+     fma FMA8678 (left anterior basal segmental vein), 0 child nodes
+    fma FMA8679 (left inferior basal vein), 1 child nodes
+     fma FMA9451 (left posterior basal segmental vein), 0 child nodes
+  fma FMA49914 (right superior pulmonary vein), 0 child nodes
+  fma FMA49916 (left superior pulmonary vein), 0 child nodes
+  fma FMA50308 (coronary sinus tree), 6 child nodes
+   fma FMA4706 (coronary sinus), 0 child nodes
+   fma FMA4707 (great cardiac vein), 0 child nodes
+   fma FMA4708 (left marginal vein), 0 child nodes
+   fma FMA4712 (posterior vein of left ventricle), 0 child nodes
+   fma FMA4713 (middle cardiac vein), 0 child nodes
+   fma FMA4714 (small cardiac vein), 0 child nodes
+  fma FMA82672 (superior systemic venous tree), 4 child nodes
+   fma FMA4720 (superior vena cava), 0 child nodes
+   fma FMA4751 (right brachiocephalic vein), 3 child nodes
+    fma FMA4754 (right internal jugular vein), 0 child nodes
+    fma FMA4755 (right subclavian vein), 0 child nodes
+    fma FMA4758 (right internal thoracic vein), 0 child nodes
+   fma FMA4761 (left brachiocephalic vein), 0 child nodes
+   fma FMA78121 (superior phrenic vein), 0 child nodes
+  fma FMA82673 (inferior systemic venous tree), 12 child nodes
+   fma FMA10951 (inferior vena cava), 0 child nodes
+   fma FMA14341 (right testicular vein), 0 child nodes
+   fma FMA14343 (right suprarenal vein), 0 child nodes
+   fma FMA14345 (left testicular vein), 0 child nodes
+   fma FMA14349 (left suprarenal vein), 0 child nodes
+   fma FMA18885 (right external iliac vein), 0 child nodes
+   fma FMA18886 (left external iliac vein), 0 child nodes
+   fma FMA18887 (right internal iliac vein), 0 child nodes
+   fma FMA18888 (left internal iliac vein), 0 child nodes
+   fma FMA21387 (right common iliac vein), 0 child nodes
+   fma FMA21388 (left common iliac vein), 0 child nodes
+   fma FMA68068 (inferior phrenic vein), 0 child nodes
+ fma FMA231424 (body proper), 3 child nodes
+  fma FMA7155 (neck), 8 child nodes
+   fma FMA12519 (atlas), 0 child nodes
+   fma FMA12520 (axis), 0 child nodes
+   fma FMA12521 (third cervical vertebra), 0 child nodes
+   fma FMA12522 (fourth cervical vertebra), 0 child nodes
+   fma FMA12523 (fifth cervical vertebra), 0 child nodes
+   fma FMA12524 (sixth cervical vertebra), 0 child nodes
+   fma FMA12525 (seventh cervical vertebra), 0 child nodes
+   fma FMA24189 (back of neck), 0 child nodes
+  fma FMA7181 (trunk), 4 child nodes
+   fma FMA9579 (perineum), 1 child nodes
+    fma FMA20347 (anal part of perineum), 1 child nodes
+     fma FMA21930 (external anal sphincter), 0 child nodes
+   fma FMA10427 (body wall), 1 child nodes
+    fma FMA87598 (skeletal system of trunk), 1 child nodes
+     fma FMA7481 (skeletal system of thorax), 2 child nodes
+      fma FMA25572 (right bony pectoral girdle), 0 child nodes
+      fma FMA25573 (left bony pectoral girdle), 1 child nodes
+       fma FMA24164 (skeleton of left pectoral girdle), 2 child nodes
+        fma FMA13323 (left clavicle), 0 child nodes
+        fma FMA13396 (left scapula), 0 child nodes
+   fma FMA259209 (thoracic segment of trunk), 2 child nodes
+    fma FMA9576 (thorax), 4 child nodes
+     fma FMA13295 (diaphragm), 0 child nodes
+     fma FMA24816 (anterior chest), 2 child nodes
+      fma FMA9838 (anterior mediastinum), 0 child nodes
+      fma FMA9839 (middle mediastinum), 1 child nodes
+       fma FMA79278 (content of middle mediastinum), 3 child nodes
+        fma FMA4838 (azygos vein), 0 child nodes
+        fma FMA7088 (heart), 4 child nodes
+         fma FMA7166 (left side of heart), 3 child nodes
+          fma FMA7097 (left atrium), 1 child nodes
+           fma FMA9551 (outflow part of left atrium), 1 child nodes
+            fma FMA7235 (mitral valve), 3 child nodes
+             fma FMA7242 (anterior leaflet of mitral valve), 0 child nodes
+             fma FMA7243 (posterior leaflet of mitral valve), 0 child nodes
+             fma FMA9498 (fibrous ring of mitral valve), 0 child nodes
+          fma FMA7101 (left ventricle), 2 child nodes
+           fma FMA9473 (outflow part of left ventricle), 2 child nodes
+            fma FMA7236 (aortic valve), 3 child nodes
+             fma FMA7252 (right posterior cusp of aortic valve), 0 child nodes
+             fma FMA7253 (anterior cusp of aortic valve), 0 child nodes
+             fma FMA7254 (left posterior cusp of aortic valve), 0 child nodes
+            fma FMA9348 (subaortic curtain of left ventricle), 0 child nodes
+           fma FMA9564 (inflow part of left ventricle), 0 child nodes
+          fma FMA73704 (wall of left side of heart), 2 child nodes
+           fma FMA9531 (wall of left atrium), 0 child nodes
+           fma FMA9556 (wall of left ventricle), 6 child nodes
+            fma FMA9558 (myocardium of left ventricle), 1 child nodes
+             fma FMA83448 (myocardium of left ventricle proper), 1 child nodes
+              fma FMA84932 (myocardium of free wall of left ventricle), 1 child nodes
+               fma FMA84857 (subendocardial layer of myocardium of left ventricle), 1 child nodes
+                fma FMA9352 (papillary muscle of left ventricle), 0 child nodes
+            fma FMA9560 (anterior wall of left ventricle), 0 child nodes
+            fma FMA9561 (inferior wall of left ventricle), 1 child nodes
+             fma FMA87179 (myocardium of inferior wall of left ventricle), 1 child nodes
+              fma FMA86056 (myocardial zone 4), 0 child nodes
+            fma FMA9563 (lateral wall of left ventricle), 2 child nodes
+             fma FMA7265 (anterolateral head of lateral papillary muscle of left ventricle), 0 child nodes
+             fma FMA87178 (myocardium of lateral wall of left ventricle), 2 child nodes
+              fma FMA86063 (myocardial zone 11), 1 child nodes
+               fma FMA7264 (lateral papillary muscle of left ventricle), 0 child nodes
+              fma FMA86064 (myocardial zone 12), 0 child nodes
+            fma FMA49214 (wall of inflow part of left ventricle), 0 child nodes
+            fma FMA84850 (free wall of left ventricle), 0 child nodes
+         fma FMA9465 (cavity of left atrium), 0 child nodes
+         fma FMA9466 (cavity of left ventricle), 0 child nodes
+         fma FMA9496 (fibrous skeleton of heart), 0 child nodes
+        fma FMA8612 (pulmonary trunk), 0 child nodes
+     fma FMA50060 (chest wall), 5 child nodes
+      fma FMA10428 (thoracic wall), 1 child nodes
+       fma FMA7480 (rib cage), 14 child nodes
+        fma FMA7857 (right first rib), 0 child nodes
+        fma FMA7882 (right second rib), 0 child nodes
+        fma FMA7909 (right third rib), 0 child nodes
+        fma FMA7957 (right fourth rib), 0 child nodes
+        fma FMA8066 (right fifth rib), 0 child nodes
+        fma FMA8175 (right sixth rib), 0 child nodes
+        fma FMA8229 (right seventh rib), 0 child nodes
+        fma FMA8283 (right eighth rib), 0 child nodes
+        fma FMA8364 (right ninth rib), 0 child nodes
+        fma FMA8445 (right tenth rib), 0 child nodes
+        fma FMA8531 (right eleventh rib), 0 child nodes
+        fma FMA8533 (right twelfth rib), 0 child nodes
+        fma FMA20224 (right side of rib cage), 7 child nodes
+         fma FMA7875 (right first costal cartilage), 0 child nodes
+         fma FMA7886 (right second costal cartilage), 0 child nodes
+         fma FMA7913 (right third costal cartilage), 0 child nodes
+         fma FMA7976 (right fourth costal cartilage), 0 child nodes
+         fma FMA8070 (right fifth costal cartilage), 0 child nodes
+         fma FMA8194 (right sixth costal cartilage), 0 child nodes
+         fma FMA8248 (right seventh costal cartilage), 0 child nodes
+        fma FMA20225 (left side of rib cage), 19 child nodes
+         fma FMA7987 (left first rib), 0 child nodes
+         fma FMA8005 (left first costal cartilage), 0 child nodes
+         fma FMA8012 (left second rib), 0 child nodes
+         fma FMA8031 (left second costal cartilage), 0 child nodes
+         fma FMA8039 (left third rib), 0 child nodes
+         fma FMA8058 (left third costal cartilage), 0 child nodes
+         fma FMA8093 (left fifth rib), 0 child nodes
+         fma FMA8112 (left fifth costal cartilage), 0 child nodes
+         fma FMA8148 (left fourth rib), 0 child nodes
+         fma FMA8167 (left fourth costal cartilage), 0 child nodes
+         fma FMA8202 (left sixth rib), 0 child nodes
+         fma FMA8221 (left sixth costal cartilage), 0 child nodes
+         fma FMA8256 (left seventh rib), 0 child nodes
+         fma FMA8275 (left seventh costal cartilage), 0 child nodes
+         fma FMA8310 (left eighth rib), 0 child nodes
+         fma FMA8391 (left ninth rib), 0 child nodes
+         fma FMA8472 (left tenth rib), 0 child nodes
+         fma FMA8532 (left eleventh rib), 0 child nodes
+         fma FMA8534 (left twelfth rib), 0 child nodes
+      fma FMA25558 (right lateral chest wall), 1 child nodes
+       fma FMA50071 (right lateral superficial chest wall), 0 child nodes
+      fma FMA25559 (left lateral chest wall), 1 child nodes
+       fma FMA50072 (left lateral superficial chest wall), 1 child nodes
+        fma FMA13399 (left serratus anterior), 0 child nodes
+      fma FMA50061 (superficial chest wall), 8 child nodes
+       fma FMA13373 (right pectoralis major), 2 child nodes
+        fma FMA45874 (abdominal part of right pectoralis major), 0 child nodes
+        fma FMA79979 (sternocostal part of right pectoralis major), 0 child nodes
+       fma FMA13374 (left pectoralis major), 2 child nodes
+        fma FMA45875 (abdominal part of left pectoralis major), 0 child nodes
+        fma FMA79980 (sternocostal part of left pectoralis major), 0 child nodes
+       fma FMA13375 (right pectoralis minor), 0 child nodes
+       fma FMA13376 (left pectoralis minor), 0 child nodes
+       fma FMA13398 (right serratus anterior), 0 child nodes
+       fma FMA13411 (left subclavius), 0 child nodes
+       fma FMA13412 (right subclavius), 0 child nodes
+       fma FMA50063 (anterior superficial chest wall), 0 child nodes
+      fma FMA87543 (anterior chest wall), 4 child nodes
+       fma FMA24866 (sternal part of chest), 1 child nodes
+        fma FMA7485 (sternum), 3 child nodes
+         fma FMA7486 (manubrium), 0 child nodes
+         fma FMA7487 (body of sternum), 0 child nodes
+         fma FMA7488 (xiphoid process), 0 child nodes
+       fma FMA61472 (right pectoral part of chest), 0 child nodes
+       fma FMA61473 (left pectoral part of chest), 0 child nodes
+       fma FMA87542 (anterior thoracic wall), 2 child nodes
+        fma FMA9761 (right transversus thoracis), 0 child nodes
+        fma FMA9762 (left transversus thoracis), 0 child nodes
+     fma FMA87552 (posterior chest), 2 child nodes
+      fma FMA9840 (posterior mediastinum), 1 child nodes
+       fma FMA79277 (content of posterior mediastinum), 1 child nodes
+        fma FMA4944 (hemiazygos vein), 0 child nodes
+      fma FMA73103 (posterior thoracic wall), 12 child nodes
+       fma FMA9165 (first thoracic vertebra), 0 child nodes
+       fma FMA9187 (second thoracic vertebra), 0 child nodes
+       fma FMA9209 (third thoracic vertebra), 0 child nodes
+       fma FMA9248 (fourth thoracic vertebra), 0 child nodes
+       fma FMA9922 (fifth thoracic vertebra), 0 child nodes
+       fma FMA9945 (sixth thoracic vertebra), 0 child nodes
+       fma FMA9968 (seventh thoracic vertebra), 0 child nodes
+       fma FMA9991 (eighth thoracic vertebra), 0 child nodes
+       fma FMA10014 (ninth thoracic vertebra), 0 child nodes
+       fma FMA10037 (tenth thoracic vertebra), 0 child nodes
+       fma FMA10059 (eleventh thoracic vertebra), 0 child nodes
+       fma FMA10081 (twelfth thoracic vertebra), 0 child nodes
+    fma FMA24217 (back of thorax), 0 child nodes
+   fma FMA259211 (abdominal segment of trunk), 2 child nodes
+    fma FMA9577 (abdomen), 4 child nodes
+     fma FMA9578 (pelvis), 2 child nodes
+      fma FMA20218 (mons pubis), 1 child nodes
+       fma FMA54319 (pubic hair), 0 child nodes
+      fma FMA24228 (posterior part of pelvis), 0 child nodes
+     fma FMA61680 (abdomen proper), 0 child nodes
+     fma FMA85031 (compartment of abdomen), 1 child nodes
+      fma FMA259248 (content of abdomen), 0 child nodes
+     fma FMA259054 (wall of abdomen), 4 child nodes
+      fma FMA10429 (wall of abdomen proper), 2 child nodes
+       fma FMA14627 (anterior abdominal wall), 1 child nodes
+        fma FMA78435 (musculature of anterior abdominal wall), 2 child nodes
+         fma FMA13336 (right external oblique), 0 child nodes
+         fma FMA13337 (left external oblique), 0 child nodes
+       fma FMA14628 (posterior abdominal wall), 2 child nodes
+        fma FMA22342 (right psoas major), 0 child nodes
+        fma FMA22343 (left psoas major), 0 child nodes
+      fma FMA10430 (pelvic wall), 4 child nodes
+       fma FMA22324 (right obturator internus), 0 child nodes
+       fma FMA22325 (left obturator internus), 0 child nodes
+       fma FMA22340 (right piriformis), 0 child nodes
+       fma FMA22341 (left piriformis), 0 child nodes
+      fma FMA16580 (bony pelvis), 2 child nodes
+       fma FMA20226 (right side of bony pelvis), 0 child nodes
+       fma FMA20227 (left side of bony pelvis), 0 child nodes
+      fma FMA86917 (musculature of abdomen), 0 child nodes
+    fma FMA61681 (back of abdomen), 0 child nodes
+  fma FMA7563 (body compartment), 2 child nodes
+   fma FMA85008 (compartment of thorax), 4 child nodes
+    fma FMA9826 (mediastinum), 3 child nodes
+     fma FMA9827 (superior mediastinum), 1 child nodes
+      fma FMA79274 (content of superior mediastinum), 1 child nodes
+       fma FMA4797 (left superior intercostal vein), 0 child nodes
+     fma FMA9828 (inferior mediastinum), 0 child nodes
+     fma FMA79273 (content of mediastinum), 2 child nodes
+      fma FMA7395 (right main bronchus), 1 child nodes
+       fma FMA68418 (right main bronchus proper), 0 child nodes
+      fma FMA79275 (content of inferior mediastinum), 1 child nodes
+       fma FMA79276 (content of anterior mediastinum), 1 child nodes
+        fma FMA9607 (thymus), 2 child nodes
+         fma FMA71194 (right lobe of thymus), 0 child nodes
+         fma FMA71195 (left lobe of thymus), 0 child nodes
+    fma FMA79269 (content of thorax), 1 child nodes
+     fma FMA26572 (thoracic part of tracheobronchial tree), 0 child nodes
+    fma FMA85055 (right pulmopleural compartment), 0 child nodes
+    fma FMA85056 (left pulmopleural compartment), 1 child nodes
+     fma FMA7310 (left lung), 5 child nodes
+      fma FMA7370 (upper lobe of left lung), 8 child nodes
+       fma FMA7372 (apicoposterior bronchopulmonary segment), 1 child nodes
+        fma FMA8666 (apicoposterior segmental vein), 2 child nodes
+         fma FMA9437 (left apical segmental vein), 0 child nodes
+         fma FMA9438 (left posterior segmental vein), 0 child nodes
+       fma FMA7373 (left anterior bronchopulmonary segment), 2 child nodes
+        fma FMA8667 (left anterior segmental vein), 0 child nodes
+        fma FMA68222 (left anterior segmental bronchial tree), 0 child nodes
+       fma FMA7374 (superior lingular bronchopulmonary segment), 3 child nodes
+        fma FMA8639 (superior lingular artery), 0 child nodes
+        fma FMA8668 (superior lingular vein), 0 child nodes
+        fma FMA68226 (superior lingular bronchial tree), 0 child nodes
+       fma FMA7375 (inferior lingular bronchopulmonary segment), 1 child nodes
+        fma FMA8640 (inferior lingular artery), 0 child nodes
+       fma FMA7385 (left apical bronchopulmonary segment), 2 child nodes
+        fma FMA8634 (left apical segmental artery), 0 child nodes
+        fma FMA68223 (left apical segmental bronchial tree), 0 child nodes
+       fma FMA7386 (left posterior bronchopulmonary segment), 0 child nodes
+       fma FMA31746 (upper lobe part of left bronchial tree), 3 child nodes
+        fma FMA68225 (left posterior segmental bronchial tree), 0 child nodes
+        fma FMA68317 (superior division of upper lobe part of left bronchial tree), 0 child nodes
+        fma FMA68318 (inferior division of upper lobe part of left bronchial tree), 1 child nodes
+         fma FMA68227 (inferior lingular bronchial tree), 0 child nodes
+       fma FMA68198 (left upper lobar artery), 2 child nodes
+        fma FMA8635 (left posterior segmental artery), 0 child nodes
+        fma FMA13279 (left anterior segmental artery), 0 child nodes
+      fma FMA7371 (lower lobe of left lung), 5 child nodes
+       fma FMA7376 (left superior bronchopulmonary segment), 1 child nodes
+        fma FMA68228 (left superior segmental bronchial tree), 0 child nodes
+       fma FMA7377 (left medial basal bronchopulmonary segment), 0 child nodes
+       fma FMA7378 (left anterior basal bronchopulmonary segment), 0 child nodes
+       fma FMA7379 (left lateral basal bronchopulmonary segment), 2 child nodes
+        fma FMA9450 (left lateral basal segmental vein), 0 child nodes
+        fma FMA68232 (left lateral basal segmental bronchial tree), 0 child nodes
+       fma FMA7380 (left posterior basal bronchopulmonary segment), 1 child nodes
+        fma FMA68233 (left posterior basal segmental bronchial tree), 0 child nodes
+      fma FMA67995 (intrapulmonary part of left pulmonary artery), 0 child nodes
+      fma FMA68004 (intrapulmonary part of left superior pulmonary vein), 2 child nodes
+       fma FMA8657 (left upper lobar vein), 0 child nodes
+       fma FMA8658 (lingular vein), 1 child nodes
+        fma FMA8669 (inferior lingular vein), 0 child nodes
+      fma FMA68005 (intrapulmonary part of left inferior pulmonary vein), 0 child nodes
+   fma FMA260456 (body cavity content), 0 child nodes

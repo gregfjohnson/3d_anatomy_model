@@ -1,0 +1,11 @@
+in partof, there are duplicate BP's among the FJ files.
+there are 418 unique BP's that are duplicates.
+
+there are 135 unique FMA's that are duplicates.
+
+*_element_parts.txt maps from fma's to fj file names.  (multiple files
+per fma in most cases.)
+
+*_inclusion_relation.txt defines a tree of fma's.
+
+*_parts_list_e.txt maps from fma's to bp's "representation id's"

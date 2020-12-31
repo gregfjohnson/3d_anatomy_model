@@ -12,6 +12,12 @@ import pprint as pp
 plt.ion()
 # import pdb; pdb.set_trace()
 
+isa_root = 'FMA62955'
+partof_root = 'FMA20394'
+# not every fma is a parent node; for example:
+# FMA49908    superior pulmonary vein FMA49914    right superior pulmonary vein
+#                                     ^^^^^^^^ not a parent.
+
 class PartsListElement:
     def __str__(self):
         s = f'fma {self.fma}, 3d_rep {self.bp}, {self.desc}'
@@ -21,12 +27,12 @@ class PartsListElement:
         return self.__str__()
 
     def __init__(self, text_line):
-        self.fma, self.bp, self.desc = \
+        self.fma, self.desc, self.file = \
             re.match('^(\S+)\s(\S+)\s(.*)', text_line).groups()
 
-class AssocParent:
+class AssocNode:
     def __str__(self):
-        s = f'parent_fma {self.parent_fma} ({self.parent_desc}), {len(self.child_nodes)} child node'
+        s = f'fma {self.fma} ({self.desc}), {len(self.child_nodes)} child node'
         if self.child_nodes != 1:
             s = s + 's'
         return s
@@ -34,62 +40,58 @@ class AssocParent:
     def __repr__(self):
         return self.__str__()
 
-    def __init__(self, parent_fma, parent_desc):
-        self.parent_fma = parent_fma
-        self.parent_desc = parent_desc
+    def __init__(self, fma, desc):
+        self.fma = fma
+        self.desc = desc
         self.child_nodes = []
+        self.parent_nodes = []
+        self.depth = 1
+        self.child_count = 0
 
-class AssocChild:
-    def __str__(self):
-        s = f'fma {self.fma}, {self.desc}'
-        return s
+    @staticmethod
+    def child_fields(text_line):
+        fma, desc = re.match('.*\t([^\t]+)\t([^\t]+)$', text_line).groups()
+        return fma, desc
 
-    def __repr__(self):
-        return self.__str__()
+    @staticmethod
+    def parent_fields(text_line):
+        fma, desc = re.match('^([^\t]+)\t([^\t]+)\t', text_line).groups()
+        return fma, desc
 
-    def __init__(self, text_line):
-        self.fma, self.desc = \
-            re.match('.*\t([^\t]+)\t([^\t]+)$', text_line).groups()
 if False:
-    import pdb; pdb.set_trace()
-    line = 'FMA3710	vascular tree	FMA14284	venous tree organ'
-    ac = AssocChild(line)
+    ac = AssocNode('FMA3710', 'vascular tree')
     print(ac)
     sys.exit(0)
 
 class AssocList:
     def __str__(self):
-        s = f'parent_fma {self.parent_fma} ({self.parent_desc}), child_fma {self.child_fma}, {self.child_desc}'
-        return s
+        return ''
 
     def __repr__(self):
         return self.__str__()
 
     def __init__(self, file):
-        self.parent_nodes = {}
+        self.nodes = {}
         lines = open(file).readlines()
         lines = [ l.strip() for l in lines]
         lines = lines[1:]
 
         for line in lines:
-            x = AssocListElement(line)
-            if not x.parent_fma in self.parent_nodes:
-                self.parent_nodes[x.parent_fma] = AssocParent(x.parent_fma, x.parent_desc)
-            self.parent_nodes[x.parent_fma].child_nodes.append(AssocChild(line))
+            parent = AssocNode(*AssocNode.parent_fields(line))
+            child  = AssocNode(*AssocNode.child_fields(line))
 
+            if parent.fma in self.nodes:
+                parent = self.nodes[parent.fma]
+            else:
+                self.nodes[parent.fma] = parent
 
-class AssocListElement:
-    def __str__(self):
-        s = f'parent_fma {self.parent_fma} ({self.parent_desc}), child_fma {self.child_fma}, {self.child_desc}'
-        return s
+            if child.fma in self.nodes:
+                child = self.nodes[child.fma]
+            else:
+                self.nodes[child.fma] = child
 
-    def __repr__(self):
-        return self.__str__()
-
-    def __init__(self, text_line):
-        self.parent_nodes = {}
-        self.parent_fma, self.parent_desc, self.child_fma, self.child_desc = \
-            re.match('([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)$', text_line).groups()
+            parent.child_nodes.append(child)
+            child.parent_nodes.append(parent)
 
 if False:
     line = 'FMA3710	BP8338	vascular tree'
@@ -109,30 +111,144 @@ def read_PartsList(fname):
 
 #----------------------- isa_parts_list_e.txt ------------
 isa_parts_list = read_PartsList('isa_parts_list_e.txt')
+"""
 print(f'len {len(isa_parts_list)}')
 
 for k in isa_parts_list:
     print(isa_parts_list[k])
 
 print()
+"""
 
 #----------------------- partof_parts_list_e.txt ------------
 partof_parts_list = read_PartsList('partof_parts_list_e.txt')
+"""
 print(f'len {len(partof_parts_list)}')
 
 for k in partof_parts_list:
     print(partof_parts_list[k])
+"""
 
 #----------------------- isa_inclusion_relation_list.txt ------------
 isa_inclusion_list = AssocList('isa_inclusion_relation_list.txt')
-print(f'len {len(isa_inclusion_list.parent_nodes)}')
+"""
+print(f'len {len(isa_inclusion_list.nodes)}')
 
-for k in isa_inclusion_list.parent_nodes:
-    print(isa_inclusion_list.parent_nodes[k])
+for k in isa_inclusion_list.nodes:
+    print(isa_inclusion_list.nodes[k])
+"""
 
 #----------------------- partof_inclusion_relation_list.txt ------------
 partof_inclusion_list = AssocList('partof_inclusion_relation_list.txt')
-print(f'len {len(partof_inclusion_list.parent_nodes)}')
+"""
+print(f'len {len(partof_inclusion_list.nodes)}')
 
-for k in partof_inclusion_list.parent_nodes:
-    print(partof_inclusion_list.parent_nodes[k])
+for k in partof_inclusion_list.nodes:
+    print(partof_inclusion_list.nodes[k])
+"""
+
+def rec_loop_check(assoc_list, node):
+    node.child_count = 1
+
+    for child in node.child_nodes:
+        if child.fma in assoc_list.nodes:
+            count, d = rec_loop_check(assoc_list, assoc_list.nodes[child.fma])
+            if node.depth < d+1:
+                node.depth = d+1
+            node.child_count = node.child_count + count
+
+    return node.child_count, node.depth
+
+def loop_check(assoc_list):
+    # import pdb; pdb.set_trace()
+    max_depth = 0
+
+    for key in assoc_list.nodes:
+        elt = assoc_list.nodes[key]
+
+        count, depth = rec_loop_check(assoc_list, elt)
+        if max_depth < depth:
+            max_depth = depth
+
+    return max_depth
+
+print(f'max depth:  {loop_check(isa_inclusion_list)}')
+
+print(f'max depth:  {loop_check(partof_inclusion_list)}')
+
+# return fma's of (recursive) children of node
+def find_children(assoc_list, node):
+    result = set()
+
+    for child in node.child_nodes:
+        result = result | {child.fma}
+        if child.fma in assoc_list.nodes:
+            result = result | find_children(assoc_list, assoc_list.nodes[child.fma])
+        result = result | find_children(assoc_list, child)
+
+    if isa_root in result:
+        print('isa_root?', node)
+
+    return result
+
+def rec_prt(assoc_list, node, depth=0):
+    for d in range(depth):
+        sys.stdout.write(' ')
+    print(node)
+    for child in node.child_nodes:
+        rec_prt(assoc_list, child, depth+1)
+
+# all child nodes are in the nodes list..
+"""
+all_children = set()
+for key in isa_inclusion_list.nodes:
+    value = isa_inclusion_list.nodes[key]
+    all_children = all_children | find_children(isa_inclusion_list, value)
+
+print(f'all isa children {len(all_children)}')
+
+for key in isa_inclusion_list.nodes:
+    value = isa_inclusion_list.nodes[key]
+    if not key in all_children:
+        print(f"not anyone's child?  {value}")
+
+print(isa_root in all_children)
+"""
+
+# import pdb; pdb.set_trace()
+print('\nisa_inclusion tree:')
+key = isa_root
+value = isa_inclusion_list.nodes[key]
+rec_prt(isa_inclusion_list, value)
+print('\ndone isa_inclusion tree\n')
+
+print('\npartof_inclusion tree:')
+key = partof_root
+value = partof_inclusion_list.nodes[key]
+rec_prt(partof_inclusion_list, value)
+print('\ndone partof_inclusion tree\n')
+
+def steps_to_root(node):
+    steps = 0
+    while len(node.parent_nodes) > 0:
+        steps = steps + 1
+        node = node.parent_nodes[0]
+    return steps
+
+for key in isa_inclusion_list.nodes:
+    value = isa_inclusion_list.nodes[key]
+    print(f'node {key}:  ' \
+          + f'parent count:  {len(value.parent_nodes)}, ' \
+          + f'child count:  {len(value.child_nodes)}, ' \
+          + f'descendant count:  {value.child_count}, ' \
+          + f'height:  {value.depth}, ' \
+          + f'to_root:  {steps_to_root(value)}' \
+          )
+
+if len(sys.argv) > 1:
+    fma_code = sys.argv[1]
+
+    node = partof_inclusion_list.nodes[fma_code]
+    fma_subtree_list = find_children(partof_inclusion_list, node)
+
+    print(fma_subtree_list)

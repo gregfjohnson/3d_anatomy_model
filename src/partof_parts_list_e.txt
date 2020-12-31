@@ -861,6 +861,7 @@ FMA50520	BP9322	left posterior inferior cerebellar artery
 FMA50532	BP7692	right anterior spinal artery
 FMA50542	BP9431	basilar artery
 FMA50544	BP10073	anterior inferior cerebellar artery
+FMA50544	BP8960	anterior inferior cerebellar artery
 FMA50561	BP7704	right pontine artery
 FMA50562	BP9707	left pontine artery
 FMA50566	BP7705	medial branch of right pontine artery
