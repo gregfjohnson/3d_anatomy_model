@@ -284,9 +284,9 @@ FJ1446M.obj:# Concept ID : FMA45875
 FJ1446M.obj:# English name : Abdominal part of left pectoralis major
 
 FJ1450.obj:# File ID : FJ1450
-FJ1450.obj:# Representation ID : 
-FJ1450.obj:# Concept ID : 
-FJ1450.obj:# English name : 
+FJ1450.obj:# Representation ID : BP8934
+FJ1450.obj:# Concept ID : FMA21930
+FJ1450.obj:# English name : External anal sphincter
 
 FJ1450M.obj:# File ID : FJ1450M
 FJ1450M.obj:# Representation ID : BP10061
