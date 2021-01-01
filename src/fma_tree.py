@@ -9,10 +9,7 @@ import time
 import numpy as np
 np.set_printoptions(linewidth = 80)
 import re
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import pprint as pp
-plt.ion()
 # import pdb; pdb.set_trace()
 from tkinter import *
 from tkinter import ttk
@@ -41,12 +38,33 @@ for key in partof_inclusion_list.nodes:
         partof_root = partof_inclusion_list.nodes[key]
         break
 
+# update selection status of elements in the GUI GTreeView object.
+# based on the tree's current fma_selection.
+rec_update_select_states(gui_tree, data_parent, fj_files)
+    item_dict = gui_tree.item(data_parent.fma)
+    values = item_dict['values']
+    if data_parent.fj_files.issubset(tree.fj_files):
+        values[0] = '*'
+        tree.fma_selections = tree.fma_selections | {data_parent.fma}
+    else:
+        values[0] = 'x'
+        tree.fma_selections = tree.fma_selections - {data_parent.fma}
+
+    tree.item(data_parent.fma, values=values)
+
+    for child in data_parent.child_nodes:
+        # import pdb; pdb.set_trace()
+
+        rec_update_select_states(tree, child, fj_files)
+
+# insert elements into the GUI GTreeView object.
 def rec_insert(tree, assoc_list, parent_node):
-    global node_count
     for child in parent_node.child_nodes:
         # import pdb; pdb.set_trace()
-        child.tree_id = tree.insert(parent_node.tree_id, "end", child.fma, text=child.desc, values=("x", "x", "x"))
-        node_count = node_count + 1
+        child.tree_id = tree.insert(parent_node.tree_id, "end", \
+                                    child.fma, text=child.desc, \
+                                    values=("x", "x", "x"))
+        child.fj_files = fma_to_filename([child.fma])
         rec_insert(tree, assoc_list, child)
 
 def activate_exit():
@@ -107,6 +125,7 @@ def TreeviewSelect(event):
 
             if len(tree.fma_selections) != 0:
                 fj_files = fma_to_filename(list(tree.fma_selections))
+                rec_update_select_states(tree, partof_root, fj_files)
                 fj_file_string = ' '.join(fj_files)
                 os.system('run_obj_view ' + fj_file_string + ' -t FJ2810')
 
@@ -132,9 +151,8 @@ tree.heading("Identify", text="Identify")
 tree.column("Clear all", width=sel_width, minwidth=sel_width)
 tree.heading("Clear all", text="Clear all")
 
-node_count = 0
 partof_root.tree_id = tree.insert("", "end", partof_root.fma, text=partof_root.desc, values=("x", "x", "x"))
-node_count = node_count + 1
+partof_root.fj_files = fma_to_filename([partof_root.fma])
 rec_insert(tree, partof_inclusion_list, partof_root)
 
 # tcp_client = connect_to_server()
