@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /mnt/cygwin64/home/Greg\ Johnson/garb.d/3d_anatomy_model/data/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99
+
+obj_view $* &

@@ -111,41 +111,15 @@ def read_PartsList(fname):
 
 #----------------------- isa_parts_list_e.txt ------------
 isa_parts_list = read_PartsList('isa_parts_list_e.txt')
-"""
-print(f'len {len(isa_parts_list)}')
-
-for k in isa_parts_list:
-    print(isa_parts_list[k])
-
-print()
-"""
 
 #----------------------- partof_parts_list_e.txt ------------
 partof_parts_list = read_PartsList('partof_parts_list_e.txt')
-"""
-print(f'len {len(partof_parts_list)}')
-
-for k in partof_parts_list:
-    print(partof_parts_list[k])
-"""
 
 #----------------------- isa_inclusion_relation_list.txt ------------
 isa_inclusion_list = AssocList('isa_inclusion_relation_list.txt')
-"""
-print(f'len {len(isa_inclusion_list.nodes)}')
-
-for k in isa_inclusion_list.nodes:
-    print(isa_inclusion_list.nodes[k])
-"""
 
 #----------------------- partof_inclusion_relation_list.txt ------------
 partof_inclusion_list = AssocList('partof_inclusion_relation_list.txt')
-"""
-print(f'len {len(partof_inclusion_list.nodes)}')
-
-for k in partof_inclusion_list.nodes:
-    print(partof_inclusion_list.nodes[k])
-"""
 
 def rec_loop_check(assoc_list, node):
     node.child_count = 1
@@ -172,10 +146,6 @@ def loop_check(assoc_list):
 
     return max_depth
 
-print(f'max depth:  {loop_check(isa_inclusion_list)}')
-
-print(f'max depth:  {loop_check(partof_inclusion_list)}')
-
 # return fma's of (recursive) children of node
 def find_children(assoc_list, node):
     result = set()
@@ -198,36 +168,6 @@ def rec_prt(assoc_list, node, depth=0):
     for child in node.child_nodes:
         rec_prt(assoc_list, child, depth+1)
 
-# all child nodes are in the nodes list..
-"""
-all_children = set()
-for key in isa_inclusion_list.nodes:
-    value = isa_inclusion_list.nodes[key]
-    all_children = all_children | find_children(isa_inclusion_list, value)
-
-print(f'all isa children {len(all_children)}')
-
-for key in isa_inclusion_list.nodes:
-    value = isa_inclusion_list.nodes[key]
-    if not key in all_children:
-        print(f"not anyone's child?  {value}")
-
-print(isa_root in all_children)
-"""
-
-# import pdb; pdb.set_trace()
-print('\nisa_inclusion tree:')
-key = isa_root
-value = isa_inclusion_list.nodes[key]
-rec_prt(isa_inclusion_list, value)
-print('\ndone isa_inclusion tree\n')
-
-print('\npartof_inclusion tree:')
-key = partof_root
-value = partof_inclusion_list.nodes[key]
-rec_prt(partof_inclusion_list, value)
-print('\ndone partof_inclusion tree\n')
-
 def steps_to_root(node):
     steps = 0
     while len(node.parent_nodes) > 0:
@@ -235,36 +175,37 @@ def steps_to_root(node):
         node = node.parent_nodes[0]
     return steps
 
-for key in isa_inclusion_list.nodes:
-    value = isa_inclusion_list.nodes[key]
-    print(f'node {key}:  ' \
-          + f'parent count:  {len(value.parent_nodes)}, ' \
-          + f'child count:  {len(value.child_nodes)}, ' \
-          + f'descendant count:  {value.child_count}, ' \
-          + f'height:  {value.depth}, ' \
-          + f'to_root:  {steps_to_root(value)}' \
-          )
-
 # FJ1252 BP7409 FMA59763
 
-fma_fj_map = {}
-fj_map_lines = [ l.strip() for l in open('fj_bp_fma.map').readlines() ]
-for line in fj_map_lines:
-    fj, bp, fma = re.match('(\S+)\s(\S+)\s(\S+)', line).groups()
-    fma_fj_map[fma] = fj
+def fma_to_filename(fma_list, use_isa=False):
+    # read in the fma->fj_filename map
+    fma_fj_map = {}
+    fj_map_lines = [ l.strip() for l in open('fj_bp_fma.map').readlines() ]
+    for line in fj_map_lines:
+        fj, bp, fma = re.match('(\S+)\s(\S+)\s(\S+)', line).groups()
+        fma_fj_map[fma] = fj
 
-if len(sys.argv) > 1:
     fj_files = set()
 
-    for fma_code in sys.argv[1:]:
-        node = partof_inclusion_list.nodes[fma_code]
-        fma_subtree_list = find_children(partof_inclusion_list, node)
+    for fma_code in fma_list:
+        if use_isa:
+            node = isa_inclusion_list.nodes[fma_code]
+            fma_subtree_list = find_children(isa_inclusion_list, node)
+        else:
+            node = partof_inclusion_list.nodes[fma_code]
+            fma_subtree_list = find_children(partof_inclusion_list, node)
+
+        fma_subtree_list = fma_subtree_list | {fma_code}
 
         for sub_fma in fma_subtree_list:
             if sub_fma in fma_fj_map:
                 fj_files = fj_files | {fma_fj_map[sub_fma]}
 
-    print(f'got {len(fj_files)} fj_files')
+    return fj_files
+
+if __name__ == '__main__':
+
+    fj_files = fma_to_filename(sys.argv[1:])
     first = True
     for fj in fj_files:
         if first:
