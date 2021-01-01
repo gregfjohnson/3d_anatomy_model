@@ -49,39 +49,85 @@ def rec_insert(tree, assoc_list, parent_node):
         node_count = node_count + 1
         rec_insert(tree, assoc_list, child)
 
-root = Tk()
-root.minsize(width=800, height=600)
+def activate_exit():
+    os.system('killall obj_view')
+    root.destroy()
+    sys.exit(0)
 
-tree = ttk.Treeview(root, height=600, columns=("Select", "Select all", "Clear all"))
+root = Tk()
+root.minsize(width=800, height=500)
+root.protocol("WM_DELETE_WINDOW", activate_exit)
+
+tree = ttk.Treeview(root, height=500, selectmode="browse", columns=("Select", "Identify", "Clear all"))
 tree.column("#0", width=700, minwidth=700)
-# tree.heading("Anatomical_components", text="Anatomical_components")
+
+tree.fma_selections = set()
+# mylist = list(dict.fromkeys(mylist))
 
 def button1(event):
-    print('left mouse button!', event, type(tree.identify_region(event.x, event.y)))
-    print('more left mouse button!', type(tree.identify_element(event.x, event.y)))
+    global tree
+    print('left mouse button!', event, tree.identify_region(event.x, event.y))
+    print('more left mouse button!', tree.identify_element(event.x, event.y))
     print(f'row {tree.identify_row(event.y)}, col {tree.identify_column(event.x)}')
+    tree.button_event = event
+
     # import pdb; pdb.set_trace()
     fma = tree.identify_row(event.y)
     print(f'fma {fma}')
     fj_files = fma_to_filename([fma])
     fj_files = " ".join(fj_files)
-    os.system('killall obj_view')
-    print('run_obj_view ' + fj_files + ' -t FMA20394')
-    os.system('run_obj_view ' + fj_files + ' -t FJ2810')
-    # tcp_client.send(str.encode(fj_files+'\n'))
 
-def select(event):
-    print('select!', event)
 
 tree.bind('<Button-1>', button1)
-tree.bind('<<TreeviewSelect>>', select)
+
+def TreeviewSelect(event):
+    global tree
+    print('TreeviewSelect!', event, tree.button_event)
+    event = tree.button_event
+    if tree.identify_column(event.x) == '#1':
+        print(f'identify_element:  {tree.identify_element(event.x, event.y)}')
+        fma = tree.selection()[0]
+        print(f'selection:  {fma}') 
+        print(f'item:  {tree.item(fma)}')
+        item_dict = tree.item(fma)
+        values = item_dict['values']
+        prev_set_count = len(tree.fma_selections)
+        if values[0] == 'x':
+            values[0] = '*'
+            tree.fma_selections = tree.fma_selections | {fma}
+        else:
+            values[0] = 'x'
+            tree.fma_selections = tree.fma_selections - {fma}
+
+        tree.item(tree.selection(), values=values)
+        print(f'fma_selections:  {tree.fma_selections}')
+
+        if prev_set_count != len(tree.fma_selections):
+            os.system('killall obj_view')
+
+            if len(tree.fma_selections) != 0:
+                fj_files = fma_to_filename(list(tree.fma_selections))
+                fj_file_string = ' '.join(fj_files)
+                os.system('run_obj_view ' + fj_file_string + ' -t FJ2810')
+
+tree.bind('<<TreeviewSelect>>', TreeviewSelect)
+
+def TreeviewOpen(event):
+    print('TreeviewOpen!', event)
+
+tree.bind('<<TreeviewOpen>>', TreeviewOpen)
+
+def TreeviewClose(event):
+    print('TreeviewClose!', event)
+
+tree.bind('<<TreeviewClose>>', TreeviewClose)
 
 sel_width=75
 tree.column("Select", width=sel_width, minwidth=sel_width)
 tree.heading("Select", text="Select")
 
-tree.column("Select all", width=sel_width, minwidth=sel_width)
-tree.heading("Select all", text="Select all")
+tree.column("Identify", width=sel_width, minwidth=sel_width)
+tree.heading("Identify", text="Identify")
 
 tree.column("Clear all", width=sel_width, minwidth=sel_width)
 tree.heading("Clear all", text="Clear all")
@@ -90,26 +136,6 @@ node_count = 0
 partof_root.tree_id = tree.insert("", "end", partof_root.fma, text=partof_root.desc, values=("x", "x", "x"))
 node_count = node_count + 1
 rec_insert(tree, partof_inclusion_list, partof_root)
-
-# tree["columns"] = ("one", "two")
-# tree.column("one", width=150)
-# tree.column("two", width=100)
-# tree.heading("one", text="column A")
-# tree.heading("two", text="column B")
-
-
-### insert format -> insert(parent, index, iid=None, **kw)
-### reference: https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview
-
-
-### insert sub-item, method 1
-# id2 = tree.insert("", "end", "dir2", text="Dir 2")
-# tree.insert(id2, "end", text="sub dir 2-1", values=("2A", "2B"))
-# tree.insert(id2, "end", text="sub dir 2-2", values=("2A-2", "2B-2"))
-
-### insert sub-item, method 2
-# tree.insert("", "end", "dir3", text="Dir 3")
-# tree.insert("dir3", "end", text=" sub dir 3", values=("3A", "3B"))
 
 # tcp_client = connect_to_server()
 tree.pack()

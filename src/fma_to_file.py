@@ -188,18 +188,25 @@ def fma_to_filename(fma_list, use_isa=False):
     fj_files = set()
 
     for fma_code in fma_list:
+        node = None
         if use_isa:
-            node = isa_inclusion_list.nodes[fma_code]
-            fma_subtree_list = find_children(isa_inclusion_list, node)
+            if fma_code in isa_inclusion_list.nodes:
+                node = isa_inclusion_list.nodes[fma_code]
+                fma_subtree_list = find_children(isa_inclusion_list, node)
         else:
-            node = partof_inclusion_list.nodes[fma_code]
-            fma_subtree_list = find_children(partof_inclusion_list, node)
+            if fma_code in partof_inclusion_list.nodes:
+                node = partof_inclusion_list.nodes[fma_code]
+                fma_subtree_list = find_children(partof_inclusion_list, node)
 
-        fma_subtree_list = fma_subtree_list | {fma_code}
+        if node == None:
+            fj_files = {}
 
-        for sub_fma in fma_subtree_list:
-            if sub_fma in fma_fj_map:
-                fj_files = fj_files | {fma_fj_map[sub_fma]}
+        else:
+            fma_subtree_list = fma_subtree_list | {fma_code}
+
+            for sub_fma in fma_subtree_list:
+                if sub_fma in fma_fj_map:
+                    fj_files = fj_files | {fma_fj_map[sub_fma]}
 
     return fj_files
 
