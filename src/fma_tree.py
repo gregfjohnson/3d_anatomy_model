@@ -111,6 +111,34 @@ def button1(event):
 
 tree.bind('<Button-1>', button1)
 
+def has_selected_subtrees(tree, node):
+    item_dict = tree.item(node.fma)
+    values = item_dict['values']
+
+    if values[0][0] == '*':
+        return True
+
+    for c in node.child_nodes:
+        if has_selected_subtrees(tree, c):
+            return True
+
+    return False
+
+def update_subtree_states(tree, node, new_state):
+    item_dict = tree.item(node.fma)
+    values = item_dict['values']
+
+    if new_state == True and values[0][0] == 'x':
+        tree.fma_selections = tree.fma_selections | {node.fma}
+        update_select_state(node, True)
+
+    elif new_state == False and values[0][0] == '*':
+        tree.fma_selections = tree.fma_selections - {node.fma}
+        update_select_state(node, False)
+
+    for c in node.child_nodes:
+        update_subtree_states(tree, c, new_state)
+
 def TreeviewSelect(event):
     global tree
     print('TreeviewSelect!', event, tree.button_event)
@@ -127,14 +155,18 @@ def TreeviewSelect(event):
 
         prev_set_count = len(tree.fma_selections)
 
-        if values[0][0] == 'x':
-            tree.fma_selections = tree.fma_selections | {fma}
-            new_state = True
-        elif values[0][0] == '*':
-            tree.fma_selections = tree.fma_selections - {fma}
-            new_state = False
+        if values[0][0] == ' ':
+            new_state = not has_selected_subtrees(tree, inclusion_list.nodes[fma])
+            update_subtree_states(tree, inclusion_list.nodes[fma], new_state)
+        else:
+            if values[0][0] == 'x':
+                tree.fma_selections = tree.fma_selections | {fma}
+                new_state = True
+            elif values[0][0] == '*':
+                tree.fma_selections = tree.fma_selections - {fma}
+                new_state = False
 
-        update_select_state(inclusion_list.nodes[fma], new_state)
+            update_select_state(inclusion_list.nodes[fma], new_state)
 
         print(f'new fma_selections:  {tree.fma_selections}')
 
@@ -203,6 +235,7 @@ rec_selectable_subtree_count(inclusion_list, partof_root)
 def update_select_state(data_node, state):
     item_dict = tree.item(data_node.fma)
     values = item_dict['values']
+
     if len(data_node.fj_files) == 0:
         new_value = ' '
     elif state:
@@ -216,7 +249,6 @@ def update_select_state(data_node, state):
     values[0] = new_value
     tree.item(data_node.fma, values=values)
 
-import pdb; pdb.set_trace()
 for node in inclusion_list.nodes:
     update_select_state(inclusion_list.nodes[node], False)
 
