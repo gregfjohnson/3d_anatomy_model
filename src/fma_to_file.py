@@ -183,7 +183,9 @@ def fma_to_filename(fma_list, use_isa=False):
     fj_map_lines = [ l.strip() for l in open('fj_bp_fma.map').readlines() ]
     for line in fj_map_lines:
         fj, bp, fma = re.match('(\S+)\s(\S+)\s(\S+)', line).groups()
-        fma_fj_map[fma] = fj
+        if not fma in fma_fj_map:
+            fma_fj_map[fma] = set()
+        fma_fj_map[fma] = fma_fj_map[fma] | {fj}
 
     fj_files = set()
 
@@ -198,15 +200,12 @@ def fma_to_filename(fma_list, use_isa=False):
                 node = partof_inclusion_list.nodes[fma_code]
                 fma_subtree_list = find_children(partof_inclusion_list, node)
 
-        if node == None:
-            fj_files = {}
-
-        else:
+        if node != None:
             fma_subtree_list = fma_subtree_list | {fma_code}
 
             for sub_fma in fma_subtree_list:
                 if sub_fma in fma_fj_map:
-                    fj_files = fj_files | {fma_fj_map[sub_fma]}
+                    fj_files = fj_files | fma_fj_map[sub_fma]
 
     return fj_files
 

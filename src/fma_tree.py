@@ -31,40 +31,53 @@ def connect_to_server():
             return client
         time.sleep(1)
 
-partof_inclusion_list = assoc.AssocList('partof_inclusion_relation_list.txt')
-print(f'partof_inclusion_list count:  {len(partof_inclusion_list.nodes)}')
-for key in partof_inclusion_list.nodes:
-    if len(partof_inclusion_list.nodes[key].parent_nodes) == 0:
-        partof_root = partof_inclusion_list.nodes[key]
+use_isa = False
+
+for arg in sys.argv:
+    if arg == '--isa':
+        use_isa = True
+
+if use_isa:
+    inclusion_list = assoc.AssocList('isa_inclusion_relation_list.txt')
+else:
+    inclusion_list = assoc.AssocList('partof_inclusion_relation_list.txt')
+
+print(f'inclusion_list count:  {len(inclusion_list.nodes)}')
+for key in inclusion_list.nodes:
+    if len(inclusion_list.nodes[key].parent_nodes) == 0:
+        partof_root = inclusion_list.nodes[key]
         break
 
 # update selection status of elements in the GUI GTreeView object.
 # based on the tree's current fma_selection.
-rec_update_select_states(gui_tree, data_parent, fj_files)
+def rec_update_implied_states(gui_tree, data_parent):
     item_dict = gui_tree.item(data_parent.fma)
     values = item_dict['values']
-    if data_parent.fj_files.issubset(tree.fj_files):
-        values[0] = '*'
-        tree.fma_selections = tree.fma_selections | {data_parent.fma}
-    else:
-        values[0] = 'x'
-        tree.fma_selections = tree.fma_selections - {data_parent.fma}
 
-    tree.item(data_parent.fma, values=values)
+    if len(data_parent.fj_files) > 0:
+        if data_parent.fj_files.issubset(tree.fj_files):
+            values[1] = '*'
+        else:
+            values[1] = ' '
+
+        tree.item(data_parent.fma, values=values)
 
     for child in data_parent.child_nodes:
-        # import pdb; pdb.set_trace()
 
-        rec_update_select_states(tree, child, fj_files)
+        rec_update_implied_states(tree, child)
 
 # insert elements into the GUI GTreeView object.
 def rec_insert(tree, assoc_list, parent_node):
     for child in parent_node.child_nodes:
         # import pdb; pdb.set_trace()
+        child.fj_files = fma_to_filename([child.fma])
+        if len(child.fj_files) > 0:
+            values = ("x", " ", " ")
+        else:
+            values = (" ", " ", " ")
         child.tree_id = tree.insert(parent_node.tree_id, "end", \
                                     child.fma, text=child.desc, \
-                                    values=("x", "x", "x"))
-        child.fj_files = fma_to_filename([child.fma])
+                                    values=values)
         rec_insert(tree, assoc_list, child)
 
 def activate_exit():
@@ -76,11 +89,11 @@ root = Tk()
 root.minsize(width=800, height=500)
 root.protocol("WM_DELETE_WINDOW", activate_exit)
 
-tree = ttk.Treeview(root, height=500, selectmode="browse", columns=("Select", "Identify", "Clear all"))
+tree = ttk.Treeview(root, height=500, selectmode="browse", columns=("Select", "Implied", "Identify"))
 tree.column("#0", width=700, minwidth=700)
 
 tree.fma_selections = set()
-# mylist = list(dict.fromkeys(mylist))
+tree.fj_files = set()
 
 def button1(event):
     global tree
@@ -109,24 +122,32 @@ def TreeviewSelect(event):
         print(f'item:  {tree.item(fma)}')
         item_dict = tree.item(fma)
         values = item_dict['values']
+
+        # import pdb; pdb.set_trace()
+
         prev_set_count = len(tree.fma_selections)
+
         if values[0] == 'x':
             values[0] = '*'
             tree.fma_selections = tree.fma_selections | {fma}
-        else:
+        elif values[0] == '*':
             values[0] = 'x'
             tree.fma_selections = tree.fma_selections - {fma}
 
         tree.item(tree.selection(), values=values)
-        print(f'fma_selections:  {tree.fma_selections}')
+        print(f'new fma_selections:  {tree.fma_selections}')
 
         if prev_set_count != len(tree.fma_selections):
             os.system('killall obj_view')
 
-            if len(tree.fma_selections) != 0:
-                fj_files = fma_to_filename(list(tree.fma_selections))
-                rec_update_select_states(tree, partof_root, fj_files)
-                fj_file_string = ' '.join(fj_files)
+            print(f'prev fj files:  {tree.fj_files}')
+            tree.fj_files = fma_to_filename(list(tree.fma_selections))
+            print(f'updated fj files:  {tree.fj_files}')
+
+            rec_update_implied_states(tree, partof_root)
+
+            if len(tree.fj_files) > 0:
+                fj_file_string = ' '.join(tree.fj_files)
                 os.system('run_obj_view ' + fj_file_string + ' -t FJ2810')
 
 tree.bind('<<TreeviewSelect>>', TreeviewSelect)
@@ -145,15 +166,20 @@ sel_width=75
 tree.column("Select", width=sel_width, minwidth=sel_width)
 tree.heading("Select", text="Select")
 
+tree.column("Implied", width=sel_width, minwidth=sel_width)
+tree.heading("Implied", text="Implied")
+
 tree.column("Identify", width=sel_width, minwidth=sel_width)
 tree.heading("Identify", text="Identify")
 
-tree.column("Clear all", width=sel_width, minwidth=sel_width)
-tree.heading("Clear all", text="Clear all")
-
-partof_root.tree_id = tree.insert("", "end", partof_root.fma, text=partof_root.desc, values=("x", "x", "x"))
 partof_root.fj_files = fma_to_filename([partof_root.fma])
-rec_insert(tree, partof_inclusion_list, partof_root)
+
+if len(partof_root.fj_files) > 0:
+    partof_root.tree_id = tree.insert("", "end", partof_root.fma,
+                                      text=partof_root.desc,
+                                      values=("x", " ", " "))
+
+rec_insert(tree, inclusion_list, partof_root)
 
 # tcp_client = connect_to_server()
 tree.pack()
