@@ -55,33 +55,33 @@ def rec_update_implied_states(gui_tree, data_parent):
     values = item_dict['values']
 
     if len(data_parent.fj_files) > 0:
-        if data_parent.fj_files.issubset(tree.fj_files):
+        if data_parent.fj_files.issubset(gui_tree.fj_files):
             values[1] = '*'
         else:
             values[1] = ' '
 
-        tree.item(data_parent.fma, values=values)
+        gui_tree.item(data_parent.fma, values=values)
 
     for child in data_parent.child_nodes:
+        rec_update_implied_states(gui_tree, child)
 
-        rec_update_implied_states(tree, child)
-
-# insert elements into the GUI GTreeView object.
-def rec_insert(tree, assoc_list, parent_node):
-    for child in parent_node.child_nodes:
+# insert elements into the GUI TreeView object.
+#
+def rec_insert(gui_tree, assoc_list, parent_data_node):
+    for child in parent_data_node.child_nodes:
         # import pdb; pdb.set_trace()
         child.fj_files = fma_to_filename([child.fma])
         if len(child.fj_files) > 0:
             values = ("x", " ", " ")
         else:
             values = (" ", " ", " ")
-        child.tree_id = tree.insert(parent_node.tree_id, "end", \
-                                    child.fma, text=child.desc, \
-                                    values=values)
-        rec_insert(tree, assoc_list, child)
+        child.tree_id = gui_tree.insert(parent_data_node.tree_id, "end", \
+                                        child.fma, text=child.desc, \
+                                        values=values)
+        rec_insert(gui_tree, assoc_list, child)
 
 def activate_exit():
-    os.system('killall obj_view')
+    os.system('killall obj_view 2> /dev/null')
     root.destroy()
     sys.exit(0)
 
@@ -127,14 +127,15 @@ def TreeviewSelect(event):
 
         prev_set_count = len(tree.fma_selections)
 
-        if values[0] == 'x':
-            values[0] = '*'
+        if values[0][0] == 'x':
             tree.fma_selections = tree.fma_selections | {fma}
-        elif values[0] == '*':
-            values[0] = 'x'
+            new_state = True
+        elif values[0][0] == '*':
             tree.fma_selections = tree.fma_selections - {fma}
+            new_state = False
 
-        tree.item(tree.selection(), values=values)
+        update_select_state(inclusion_list.nodes[fma], new_state)
+
         print(f'new fma_selections:  {tree.fma_selections}')
 
         if prev_set_count != len(tree.fma_selections):
@@ -175,11 +176,49 @@ tree.heading("Identify", text="Identify")
 partof_root.fj_files = fma_to_filename([partof_root.fma])
 
 if len(partof_root.fj_files) > 0:
-    partof_root.tree_id = tree.insert("", "end", partof_root.fma,
-                                      text=partof_root.desc,
-                                      values=("x", " ", " "))
-
+    values = ("x", " ", " ")
+else:
+    values = (" ", " ", " ")
+partof_root.tree_id = tree.insert("", "end", partof_root.fma,
+                                  text=partof_root.desc,
+                                  values=values)
 rec_insert(tree, inclusion_list, partof_root)
+
+# each node has zero of more subtree nodes (not counting itself)
+# that have one or more fj_files and are selectable.
+
+def rec_selectable_subtree_count(inclusion_list, data_node):
+    selectable_subtree_count = 0
+    for child in data_node.child_nodes:
+        if len(child.fj_files) > 0:
+            selectable_subtree_count = selectable_subtree_count + 1
+
+        rec_selectable_subtree_count(inclusion_list, child)
+        selectable_subtree_count = selectable_subtree_count + child.selectable_subtree_count
+
+    data_node.selectable_subtree_count = selectable_subtree_count
+
+rec_selectable_subtree_count(inclusion_list, partof_root)
+
+def update_select_state(data_node, state):
+    item_dict = tree.item(data_node.fma)
+    values = item_dict['values']
+    if len(data_node.fj_files) == 0:
+        new_value = ' '
+    elif state:
+        new_value = '*'
+    else:
+        new_value = 'x'
+
+    if data_node.selectable_subtree_count > 0:
+        new_value = new_value + f' ({data_node.selectable_subtree_count})'
+
+    values[0] = new_value
+    tree.item(data_node.fma, values=values)
+
+import pdb; pdb.set_trace()
+for node in inclusion_list.nodes:
+    update_select_state(inclusion_list.nodes[node], False)
 
 # tcp_client = connect_to_server()
 tree.pack()

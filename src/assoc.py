@@ -27,7 +27,7 @@ class AssocNode:
         self.child_nodes = []
         self.parent_nodes = []
         self.depth = 1
-        self.child_count = 0
+        self.subtree_count = 0
 
     @staticmethod
     def child_fields(text_line):
@@ -73,3 +73,22 @@ class AssocList:
 
             parent.child_nodes.append(child)
             child.parent_nodes.append(parent)
+
+        # obtain an arbitrary
+        for r in self.nodes:
+            root = self.nodes[r]
+            break
+        while len(root.parent_nodes) > 0:
+            root = root.parent_nodes[0]
+
+        self.set_subtree_counts(root)
+
+    def set_subtree_counts(self, node):
+        node.subtree_count = 1
+
+        for child in node.child_nodes:
+            if child.fma in self.nodes:
+                child_node = self.nodes[child.fma]
+                self.set_subtree_counts(child_node)
+                node.subtree_count = node.subtree_count + child_node.subtree_count
+
