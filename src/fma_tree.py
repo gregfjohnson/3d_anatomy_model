@@ -97,19 +97,25 @@ tree.fj_files = set()
 
 def button1(event):
     global tree
+
     print('left mouse button!', event, tree.identify_region(event.x, event.y))
     print('more left mouse button!', tree.identify_element(event.x, event.y))
     print(f'row {tree.identify_row(event.y)}, col {tree.identify_column(event.x)}')
+
     tree.button_event = event
 
-    # import pdb; pdb.set_trace()
-    fma = tree.identify_row(event.y)
-    print(f'fma {fma}')
-    fj_files = fma_to_filename([fma])
-    fj_files = " ".join(fj_files)
+def button3(event):
+    global tree
 
+    print('right mouse button!', event, tree.identify_region(event.x, event.y))
+    print('more right mouse button!', tree.identify_element(event.x, event.y))
+    print(f'row {tree.identify_row(event.y)}, col {tree.identify_column(event.x)}')
+
+    tree.button_event = event
+    update_selection(tree, tree.identify_row(event.y), event)
 
 tree.bind('<Button-1>', button1)
+tree.bind('<Button-3>', button3)
 
 def has_selected_subtrees(tree, node):
     item_dict = tree.item(node.fma)
@@ -139,25 +145,88 @@ def update_subtree_states(tree, node, new_state):
     for c in node.child_nodes:
         update_subtree_states(tree, c, new_state)
 
+def update_selection(tree, fma, event):
+    item_dict = tree.item(fma)
+    values = item_dict['values']
+
+    print(f'identify_element:  {tree.identify_element(event.x, event.y)}')
+    print(f'identify_row:  {tree.identify_row(event.y)}')
+    print(f'selection:  {fma}') 
+    print(f'item:  {tree.item(fma)}')
+
+    # import pdb; pdb.set_trace()
+
+    prev_set_count = len(tree.fma_selections)
+
+    # right-button click on any select entry clears its subtree.
+    # left-button click on blank select entry enables its subtree.
+    #
+    if values[0][0] == ' ' or tree.button_event.num == 3:
+        new_state = tree.button_event.num == 1  # left-mouse
+        update_subtree_states(tree, inclusion_list.nodes[fma], new_state)
+
+    # left-button click on a select entry with associated
+    # fj files toggles the state of that one entry.
+    #
+    else:
+        if values[0][0] == 'x':
+            tree.fma_selections = tree.fma_selections | {fma}
+            new_state = True
+        elif values[0][0] == '*':
+            tree.fma_selections = tree.fma_selections - {fma}
+            new_state = False
+
+        update_select_state(inclusion_list.nodes[fma], new_state)
+
+    print(f'new fma_selections:  {tree.fma_selections}')
+
+    if prev_set_count != len(tree.fma_selections):
+        os.system('killall obj_view')
+
+        print(f'prev fj files:  {tree.fj_files}')
+        tree.fj_files = fma_to_filename(list(tree.fma_selections))
+        print(f'updated fj files:  {tree.fj_files}')
+
+        rec_update_implied_states(tree, partof_root)
+
+        if len(tree.fj_files) > 0:
+            fj_file_string = ' '.join(tree.fj_files)
+            os.system('run_obj_view ' + fj_file_string + ' -t FJ2810')
+
 def TreeviewSelect(event):
     global tree
     print('TreeviewSelect!', event, tree.button_event)
     event = tree.button_event
+
+    # the "Select" column was moused
+    #
     if tree.identify_column(event.x) == '#1':
-        print(f'identify_element:  {tree.identify_element(event.x, event.y)}')
         fma = tree.selection()[0]
-        print(f'selection:  {fma}') 
-        print(f'item:  {tree.item(fma)}')
+        update_selection(tree, fma, event)
+
+        """
         item_dict = tree.item(fma)
         values = item_dict['values']
+
+        print(f'identify_element:  {tree.identify_element(event.x, event.y)}')
+        print(f'identify_row:  {tree.identify_row(event.y)}')
+        print(f'selection:  {fma}') 
+        print(f'item:  {tree.item(fma)}')
 
         # import pdb; pdb.set_trace()
 
         prev_set_count = len(tree.fma_selections)
 
-        if values[0][0] == ' ':
-            new_state = not has_selected_subtrees(tree, inclusion_list.nodes[fma])
+        # right-button click on any select entry clears its subtree.
+        # left-button click on blank select entry enables its subtree.
+        #
+        if values[0][0] == ' ' or tree.button_event.num == 3:
+            new_state = tree.button_event.num == 1  # left-mouse
             update_subtree_states(tree, inclusion_list.nodes[fma], new_state)
+
+        # left-button click on a select entry with associated
+        # fj files toggles the state of that one entry.
+        #
         else:
             if values[0][0] == 'x':
                 tree.fma_selections = tree.fma_selections | {fma}
@@ -182,6 +251,7 @@ def TreeviewSelect(event):
             if len(tree.fj_files) > 0:
                 fj_file_string = ' '.join(tree.fj_files)
                 os.system('run_obj_view ' + fj_file_string + ' -t FJ2810')
+        """
 
 tree.bind('<<TreeviewSelect>>', TreeviewSelect)
 
