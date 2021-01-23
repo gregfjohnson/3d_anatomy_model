@@ -40,7 +40,7 @@ for key in partof_inclusion_list.nodes:
 
 # update selection status of elements in the GUI GTreeView object.
 # based on the tree's current fma_selection.
-rec_update_select_states(gui_tree, data_parent, fj_files)
+def rec_update_select_states(gui_tree, data_parent, fj_files):
     item_dict = gui_tree.item(data_parent.fma)
     values = item_dict['values']
     if data_parent.fj_files.issubset(tree.fj_files):
