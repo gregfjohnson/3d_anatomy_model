@@ -46,7 +46,7 @@ class AssocNode:
         self.child_nodes = []
         self.parent_nodes = []
         self.depth = 1
-        self.child_count = 0
+        self.subtree_count = 0
 
     @staticmethod
     def child_fields(text_line):
@@ -122,16 +122,16 @@ isa_inclusion_list = AssocList('isa_inclusion_relation_list.txt')
 partof_inclusion_list = AssocList('partof_inclusion_relation_list.txt')
 
 def rec_loop_check(assoc_list, node):
-    node.child_count = 1
+    node.subtree_count = 1
 
     for child in node.child_nodes:
         if child.fma in assoc_list.nodes:
             count, d = rec_loop_check(assoc_list, assoc_list.nodes[child.fma])
             if node.depth < d+1:
                 node.depth = d+1
-            node.child_count = node.child_count + count
+            node.subtree_count = node.subtree_count + count
 
-    return node.child_count, node.depth
+    return node.subtree_count, node.depth
 
 def loop_check(assoc_list):
     # import pdb; pdb.set_trace()
@@ -183,7 +183,9 @@ def fma_to_filename(fma_list, use_isa=False):
     fj_map_lines = [ l.strip() for l in open('fj_bp_fma.map').readlines() ]
     for line in fj_map_lines:
         fj, bp, fma = re.match('(\S+)\s(\S+)\s(\S+)', line).groups()
-        fma_fj_map[fma] = fj
+        if not fma in fma_fj_map:
+            fma_fj_map[fma] = set()
+        fma_fj_map[fma] = fma_fj_map[fma] | {fj}
 
     fj_files = set()
 
@@ -198,20 +200,16 @@ def fma_to_filename(fma_list, use_isa=False):
                 node = partof_inclusion_list.nodes[fma_code]
                 fma_subtree_list = find_children(partof_inclusion_list, node)
 
-        if node == None:
-            fj_files = {}
-
-        else:
+        if node != None:
             fma_subtree_list = fma_subtree_list | {fma_code}
 
             for sub_fma in fma_subtree_list:
                 if sub_fma in fma_fj_map:
-                    fj_files = fj_files | {fma_fj_map[sub_fma]}
+                    fj_files = fj_files | fma_fj_map[sub_fma]
 
     return fj_files
 
 if __name__ == '__main__':
-
     fj_files = fma_to_filename(sys.argv[1:])
     first = True
     for fj in fj_files:

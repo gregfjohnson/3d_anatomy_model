@@ -46,7 +46,7 @@ class AssocNode:
         self.child_nodes = []
         self.parent_nodes = []
         self.depth = 1
-        self.child_count = 0
+        self.subtree_count = 0
 
     @staticmethod
     def child_fields(text_line):
@@ -148,16 +148,16 @@ for k in partof_inclusion_list.nodes:
 """
 
 def rec_loop_check(assoc_list, node):
-    node.child_count = 1
+    node.subtree_count = 1
 
     for child in node.child_nodes:
         if child.fma in assoc_list.nodes:
             count, d = rec_loop_check(assoc_list, assoc_list.nodes[child.fma])
             if node.depth < d+1:
                 node.depth = d+1
-            node.child_count = node.child_count + count
+            node.subtree_count = node.subtree_count + count
 
-    return node.child_count, node.depth
+    return node.subtree_count, node.depth
 
 def loop_check(assoc_list):
     # import pdb; pdb.set_trace()
@@ -240,7 +240,7 @@ for key in isa_inclusion_list.nodes:
     print(f'node {key}:  ' \
           + f'parent count:  {len(value.parent_nodes)}, ' \
           + f'child count:  {len(value.child_nodes)}, ' \
-          + f'descendant count:  {value.child_count}, ' \
+          + f'descendant count:  {value.subtree_count}, ' \
           + f'height:  {value.depth}, ' \
           + f'to_root:  {steps_to_root(value)}' \
           )
