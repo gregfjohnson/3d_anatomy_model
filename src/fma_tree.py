@@ -62,8 +62,8 @@ def rec_update_select_states(gui_tree, data_parent, fj_files):
 
         gui_tree.item(data_parent.fma, values=values)
 
-    for child in data_parent.child_nodes:
-        rec_update_implied_states(gui_tree, child)
+    #for child in data_parent.child_nodes:
+        #rec_update_implied_states(gui_tree, child)
 
 # insert elements into the GUI TreeView object.
 #
@@ -187,7 +187,7 @@ def update_selection(tree, fma, event):
         tree.fj_files = fma_to_filename(list(tree.fma_selections))
         print(f'updated fj files:  {tree.fj_files}')
 
-        rec_update_implied_states(tree, partof_root)
+        #rec_update_implied_states(tree, partof_root)
 
         if len(tree.fj_files) > 0:
             fj_file_string = ' '.join(tree.fj_files)
@@ -246,7 +246,7 @@ def TreeviewSelect(event):
             tree.fj_files = fma_to_filename(list(tree.fma_selections))
             print(f'updated fj files:  {tree.fj_files}')
 
-            rec_update_implied_states(tree, partof_root)
+            #rec_update_implied_states(tree, partof_root)
 
             if len(tree.fj_files) > 0:
                 fj_file_string = ' '.join(tree.fj_files)
