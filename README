@@ -1,0 +1,13 @@
+This is a work-in-progress project.
+
+It is a 3-d visualization tool of human anatomy.  The anatomy is structured
+in a hierarchy of components.  Multiple components can be visualized
+together.
+
+It uses a Creative Commons-licensed database of the human anatomy
+obtainable from:
+
+ftp://ftp.biosciencedbc.jp/archive/bodyparts3d/
+
+It uses OpenGL, FreeGLUT, python3, and a basic collection of python3
+dependencies.
